@@ -1,0 +1,52 @@
+{
+    "SchemaVersion": 1,
+    "ModName": "Reliable Rolls",
+    "Tabs": [
+        {
+            "TabId": "general",
+            "TabName": "General",
+            "Handles": {
+                "NameHandle": "GeneralName"
+            }
+        },
+        {
+            "TabId": "passives",
+            "TabName": "Passives",
+            "Settings": [
+                {
+                    "Id": "ExtraHitPoints",
+                    "Name": "Extra: Hit Points",
+                    "Type": "int",
+                    "Default": 100,
+                    "VisibleIf": {
+                        "Conditions": [
+                            {
+                                "SettingId": "ExtraHitPoints",
+                                "Operator": "==",
+                                "ExpectedValue": -1000
+                            }
+                        ]
+                    }
+                },
+                {
+                    "Id": "ExtraDamage",
+                    "Name": "Extra: Damage",
+                    "Type": "int",
+                    "Default": 100,
+                    "VisibleIf": {
+                        "Conditions": [
+                            {
+                                "SettingId": "ExtraDamage",
+                                "Operator": "==",
+                                "ExpectedValue": -1000
+                            }
+                        ]
+                    }
+                }
+            ],
+            "Handles": {
+                "NameHandle": "PassivesName"
+            }
+        }
+    ]
+}

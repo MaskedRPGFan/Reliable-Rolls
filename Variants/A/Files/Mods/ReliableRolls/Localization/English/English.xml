@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<contentList>
+    <content contentuid="ReliableRollsDamageName2" version="1">No Critical Failure: Damage</content>
+    <content contentuid="ReliableRollsDamageDescription2" version="1">Damage Roll is never critical failure, rolling 2 and more.</content>
+    <content contentuid="ReliableRollsDamageName" version="1">Critical Success: Damage</content>
+    <content contentuid="ReliableRollsDamageDescription" version="1">Damage Roll is critical success, rolling 20.</content>
+    <content contentuid="ReliableRollsAttackName2" version="1">No Critical Failure: Attack</content>
+    <content contentuid="ReliableRollsAttackDescription2" version="1">&lt;LSTag Tooltip=&quot;AttackRoll&quot;&gt;Attack Roll&lt;/LSTag&gt; is never critical failure, rolling 2 and more.</content>
+    <content contentuid="ReliableRollsAttackName" version="1">Critical Success: Attack</content>
+    <content contentuid="ReliableRollsAttackDescription" version="1">&lt;LSTag Tooltip=&quot;AttackRoll&quot;&gt;Attack Roll&lt;/LSTag&gt; is critical success, rolling 20.</content>
+    <content contentuid="ReliableRollsAbilityName" version="1">Critical Success: Ability</content>
+    <content contentuid="ReliableRollsAbilityDescription" version="1">&lt;LSTag Tooltip=&quot;AbilityCheck&quot;&gt;Ability Checks&lt;/LSTag&gt; are always rolling 20.</content>
+    <content contentuid="ReliableRollsSkillName" version="1">Critical Success: Skill</content>
+    <content contentuid="ReliableRollsSkillDescription" version="1">&lt;LSTag Tooltip=&quot;SkillCheck&quot;&gt;Skill Checks&lt;/LSTag&gt; are always rolling 20.</content>
+    <content contentuid="ReliableRollsSavingThrowName" version="1">Critical Success: Saving Throw</content>
+    <content contentuid="ReliableRollsSavingThrowDescription" version="1">&lt;LSTag Tooltip=&quot;SavingThrow&quot;&gt;Saving Throw&lt;/LSTag&gt; are always rolling 20.</content>
+    <content contentuid="ReliableRollsExtraDamageName" version="1">Extra: Damage</content>
+    <content contentuid="ReliableRollsExtraDamageDescription" version="1">Gives additional [1] damage to all sources.</content>
+    <content contentuid="ReliableRollsHitPointsName" version="1">Extra: Hit Points</content>
+    <content contentuid="ReliableRollsHitPointsDescription" version="1">Gives extra [1] &lt;LSTag Tooltip=&quot;HitPoints&quot;&gt;Hit Points&lt;/LSTag&gt;.</content>
+    <content contentuid="ReliableRollsCriticalStrikeName" version="1">Critical Strike</content>
+    <content contentuid="ReliableRollsCriticalStrikeDescription" version="1">Any successful &lt;LSTag Tooltip=&quot;AttackRoll&quot;&gt;Attack Roll&lt;/LSTag&gt; against a creature is a &lt;LSTag Tooltip=&quot;CriticalHit&quot;&gt;Critical Hit&lt;/LSTag&gt;.</content>
+    <content contentuid="ExtraHitPointsName" version="1">Extra: Hit Points</content>
+    <content contentuid="ExtraHitPointsTooltip" version="1">Sets current extra hit points for passive Extra: Hit Points.</content>
+    <content contentuid="DecreaseValueBy" version="1">Decrease value by </content>
+    <content contentuid="IncreaseValueBy" version="1">Increase value by </content>
+    <content contentuid="ResetValueToDefault" version="1">Reset value to </content>
+    <content contentuid="Set" version="1">Set</content>
+    <content contentuid="ExtraDamageName" version="1">Extra: Damage</content>
+    <content contentuid="ExtraDamageTooltip" version="1">Sets current extra damage points for passive Extra: Damage.</content>
+    <content contentuid="AddToSelectedMemberName" version="1">Add To Selected Member</content>
+    <content contentuid="AddToSelectedMemberTooltip" version="1">Add Reliable Rolls passives to currently selected Party Member.</content>
+    <content contentuid="RemoveFromSelectedMemberName" version="1">Remove From Selected Member</content>
+    <content contentuid="RemoveFromSelectedMemberTooltip" version="1">Remove Reliable Rolls passives from currently selected Party Member.</content>
+    <content contentuid="AddToAllMembersName" version="1">Add To All Members</content>
+    <content contentuid="AddToAllMembersTooltip" version="1">Add Reliable Rolls passives to all current Party Members.</content>
+    <content contentuid="RemoveFromAllMembersName" version="1">Remove From All Members</content>
+    <content contentuid="RemoveFromAllMembersTooltip" version="1">Remove Reliable Rolls passives from all current Party Members.</content>
+    <content contentuid="GeneralName" version="1">General</content>
+    <content contentuid="PassivesName" version="1">Passives</content>
+</contentList>
