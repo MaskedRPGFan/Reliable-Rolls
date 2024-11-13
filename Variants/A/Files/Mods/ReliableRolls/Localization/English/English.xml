@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <contentList>
     <content contentuid="ReliableRollsDamageName2" version="1">No Critical Failure: Damage</content>
-    <content contentuid="ReliableRollsDamageDescription2" version="1">Damage Roll is never critical failure, rolling 2 and more.</content>
+    <content contentuid="ReliableRollsDamageDescription2" version="1">Damage Roll is rolling 2 and more.</content>
     <content contentuid="ReliableRollsDamageName" version="1">Critical Success: Damage</content>
     <content contentuid="ReliableRollsDamageDescription" version="1">Damage Roll is critical success, rolling 20.</content>
     <content contentuid="ReliableRollsAttackName2" version="1">No Critical Failure: Attack</content>
-    <content contentuid="ReliableRollsAttackDescription2" version="1">&lt;LSTag Tooltip=&quot;AttackRoll&quot;&gt;Attack Roll&lt;/LSTag&gt; is never critical failure, rolling 2 and more.</content>
+    <content contentuid="ReliableRollsAttackDescription2" version="1">&lt;LSTag Tooltip=&quot;AttackRoll&quot;&gt;Attack Roll&lt;/LSTag&gt; is never critical failure, even if you roll 1.</content>
     <content contentuid="ReliableRollsAttackName" version="1">Critical Success: Attack</content>
     <content contentuid="ReliableRollsAttackDescription" version="1">&lt;LSTag Tooltip=&quot;AttackRoll&quot;&gt;Attack Roll&lt;/LSTag&gt; is critical success, rolling 20.</content>
     <content contentuid="ReliableRollsAbilityName" version="1">Critical Success: Ability</content>

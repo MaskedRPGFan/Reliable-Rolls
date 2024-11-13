@@ -34,7 +34,7 @@ Any successful [Attack Roll](https://bg3.wiki/wiki/Attack_Rolls) against a creat
 [Damage Roll](https://bg3.wiki/wiki/Damage) is never critical failure, rolling 2 and more.
 
 ![https://i.postimg.cc/L4VgRmzW/Reliable-Rolls-Attack2.png](https://i.postimg.cc/L4VgRmzW/Reliable-Rolls-Attack2.png)**No Critical Failure: Attack**
-[Attack Roll](https://bg3.wiki/wiki/Attack_Rolls) is never critical failure, rolling 2 and more.
+[Attack Roll](https://bg3.wiki/wiki/Attack_Rolls) is never critical failure, even if you roll 1.
 
 ![https://i.postimg.cc/QtGKNt42/Reliable-Rolls-Extra-Damage.png](https://i.postimg.cc/QtGKNt42/Reliable-Rolls-Extra-Damage.png)**Extra: Damage**
 Gives additional 100 [Damage](https://bg3.wiki/wiki/Damage) to all sources. Value adjustable in MCM.
@@ -66,7 +66,6 @@ Open [MCM](https://www.nexusmods.com/baldursgate3/mods/9162) and use General tab
 
 ## Compatibility
 
-* ✅ Compatible with other mods. Critical Success: Attack can cause CTD in cutscenes.
 * ✅ Base game (Patch 7, Hotfix #28).
 
 ## Troubleshooting
