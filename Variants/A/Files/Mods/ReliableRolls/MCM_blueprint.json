@@ -3,49 +3,399 @@
     "ModName": "Reliable Rolls",
     "Tabs": [
         {
-            "TabId": "general",
-            "TabName": "General",
-            "Handles": {
-                "NameHandle": "GeneralName"
-            }
-        },
-        {
-            "TabId": "passives",
-            "TabName": "Passives",
+            "TabId": "settings",
+            "TabName": "Settings",
             "Settings": [
                 {
-                    "Id": "ExtraHitPoints",
-                    "Name": "Extra: Hit Points",
+                    "Id": "ShowPageID",
+                    "Name": "",
                     "Type": "int",
-                    "Default": 100,
-                    "VisibleIf": {
-                        "Conditions": [
-                            {
-                                "SettingId": "ExtraHitPoints",
-                                "Operator": "==",
-                                "ExpectedValue": -1000
-                            }
-                        ]
-                    }
+                    "Default": 0
                 },
                 {
-                    "Id": "ExtraDamage",
-                    "Name": "Extra: Damage",
+                    "Id": "ExtraHitPointsSlider",
+                    "Name": "Slider Value",
                     "Type": "int",
-                    "Default": 100,
-                    "VisibleIf": {
-                        "Conditions": [
-                            {
-                                "SettingId": "ExtraDamage",
-                                "Operator": "==",
-                                "ExpectedValue": -1000
-                            }
-                        ]
-                    }
+                    "Default": 100
+                },
+                {
+                    "Id": "ExtraHitPointsCombatLog",
+                    "Name": "Combat Log",
+                    "Type": "checkbox",
+                    "Default": false
+                },
+                {
+                    "Id": "ExtraHitPointsPortraitIndicator",
+                    "Name": "Portrait Indicator",
+                    "Type": "checkbox",
+                    "Default": true
+                },
+                {
+                    "Id": "ExtraHitPointsOverhead",
+                    "Name": "Overhead",
+                    "Type": "checkbox",
+                    "Default": false
+                },
+                {
+                    "Id": "ExtraInitiativeSlider",
+                    "Name": "Slider Value",
+                    "Type": "int",
+                    "Default": 5
+                },
+                {
+                    "Id": "ExtraInitiativeCombatLog",
+                    "Name": "Combat Log",
+                    "Type": "checkbox",
+                    "Default": false
+                },
+                {
+                    "Id": "ExtraInitiativePortraitIndicator",
+                    "Name": "Portrait Indicator",
+                    "Type": "checkbox",
+                    "Default": true
+                },
+                {
+                    "Id": "ExtraInitiativeOverhead",
+                    "Name": "Overhead",
+                    "Type": "checkbox",
+                    "Default": false
+                },
+                {
+                    "Id": "ExtraSavingThrowSlider",
+                    "Name": "Slider Value",
+                    "Type": "int",
+                    "Default": 5
+                },
+                {
+                    "Id": "ExtraSavingThrowCombatLog",
+                    "Name": "Combat Log",
+                    "Type": "checkbox",
+                    "Default": false
+                },
+                {
+                    "Id": "ExtraSavingThrowPortraitIndicator",
+                    "Name": "Portrait Indicator",
+                    "Type": "checkbox",
+                    "Default": true
+                },
+                {
+                    "Id": "ExtraSavingThrowOverhead",
+                    "Name": "Overhead",
+                    "Type": "checkbox",
+                    "Default": false
+                },
+                {
+                    "Id": "ExtraSkillSlider",
+                    "Name": "Slider Value",
+                    "Type": "int",
+                    "Default": 5
+                },
+                {
+                    "Id": "ExtraSkillCombatLog",
+                    "Name": "Combat Log",
+                    "Type": "checkbox",
+                    "Default": false
+                },
+                {
+                    "Id": "ExtraSkillPortraitIndicator",
+                    "Name": "Portrait Indicator",
+                    "Type": "checkbox",
+                    "Default": true
+                },
+                {
+                    "Id": "ExtraSkillOverhead",
+                    "Name": "Overhead",
+                    "Type": "checkbox",
+                    "Default": false
+                },
+                {
+                    "Id": "ExtraAbilitySlider",
+                    "Name": "Slider Value",
+                    "Type": "int",
+                    "Default": 5
+                },
+                {
+                    "Id": "ExtraAbilityCombatLog",
+                    "Name": "Combat Log",
+                    "Type": "checkbox",
+                    "Default": false
+                },
+                {
+                    "Id": "ExtraAbilityPortraitIndicator",
+                    "Name": "Portrait Indicator",
+                    "Type": "checkbox",
+                    "Default": true
+                },
+                {
+                    "Id": "ExtraAbilityOverhead",
+                    "Name": "Overhead",
+                    "Type": "checkbox",
+                    "Default": false
+                },
+                {
+                    "Id": "ReliableRollsAbilityCombatLog",
+                    "Name": "Combat Log",
+                    "Type": "checkbox",
+                    "Default": false
+                },
+                {
+                    "Id": "ReliableRollsAbilityPortraitIndicator",
+                    "Name": "Portrait Indicator",
+                    "Type": "checkbox",
+                    "Default": true
+                },
+                {
+                    "Id": "ReliableRollsAbilityOverhead",
+                    "Name": "Overhead",
+                    "Type": "checkbox",
+                    "Default": false
+                },
+                {
+                    "Id": "ReliableRollsSkillCombatLog",
+                    "Name": "Combat Log",
+                    "Type": "checkbox",
+                    "Default": false
+                },
+                {
+                    "Id": "ReliableRollsSkillPortraitIndicator",
+                    "Name": "Portrait Indicator",
+                    "Type": "checkbox",
+                    "Default": true
+                },
+                {
+                    "Id": "ReliableRollsSkillOverhead",
+                    "Name": "Overhead",
+                    "Type": "checkbox",
+                    "Default": false
+                },
+                {
+                    "Id": "ReliableRollsSavingThrowCombatLog",
+                    "Name": "Combat Log",
+                    "Type": "checkbox",
+                    "Default": false
+                },
+                {
+                    "Id": "ReliableRollsSavingThrowPortraitIndicator",
+                    "Name": "Portrait Indicator",
+                    "Type": "checkbox",
+                    "Default": true
+                },
+                {
+                    "Id": "ReliableRollsSavingThrowOverhead",
+                    "Name": "Overhead",
+                    "Type": "checkbox",
+                    "Default": false
+                },
+                {
+                    "Id": "ExtraDamageSlider",
+                    "Name": "Slider Value",
+                    "Type": "int",
+                    "Default": 100
+                },
+                {
+                    "Id": "ExtraDamageCombatLog",
+                    "Name": "Combat Log",
+                    "Type": "checkbox",
+                    "Default": false
+                },
+                {
+                    "Id": "ExtraDamagePortraitIndicator",
+                    "Name": "Portrait Indicator",
+                    "Type": "checkbox",
+                    "Default": true
+                },
+                {
+                    "Id": "ExtraDamageOverhead",
+                    "Name": "Overhead",
+                    "Type": "checkbox",
+                    "Default": false
+                },
+                {
+                    "Id": "ReliableRollsDamageRangeSliderFrom",
+                    "Name": "Slider From Value",
+                    "Type": "int",
+                    "Default": 1
+                },
+                {
+                    "Id": "ReliableRollsDamageRangeSliderTo",
+                    "Name": "Slider To Value",
+                    "Type": "int",
+                    "Default": 10
+                },
+                {
+                    "Id": "ReliableRollsDamageRangeCombatLog",
+                    "Name": "Combat Log",
+                    "Type": "checkbox",
+                    "Default": false
+                },
+                {
+                    "Id": "ReliableRollsDamageRangePortraitIndicator",
+                    "Name": "Portrait Indicator",
+                    "Type": "checkbox",
+                    "Default": true
+                },
+                {
+                    "Id": "ReliableRollsDamageRangeOverhead",
+                    "Name": "Overhead",
+                    "Type": "checkbox",
+                    "Default": false
+                },
+                {
+                    "Id": "ReliableRollsDamageCombatLog",
+                    "Name": "Combat Log",
+                    "Type": "checkbox",
+                    "Default": false
+                },
+                {
+                    "Id": "ReliableRollsDamagePortraitIndicator",
+                    "Name": "Portrait Indicator",
+                    "Type": "checkbox",
+                    "Default": true
+                },
+                {
+                    "Id": "ReliableRollsDamageOverhead",
+                    "Name": "Overhead",
+                    "Type": "checkbox",
+                    "Default": false
+                },
+                {
+                    "Id": "ExtraAttackSlider",
+                    "Name": "Slider Value",
+                    "Type": "int",
+                    "Default": 5
+                },
+                {
+                    "Id": "ExtraAttackCombatLog",
+                    "Name": "Combat Log",
+                    "Type": "checkbox",
+                    "Default": false
+                },
+                {
+                    "Id": "ExtraAttackPortraitIndicator",
+                    "Name": "Portrait Indicator",
+                    "Type": "checkbox",
+                    "Default": true
+                },
+                {
+                    "Id": "ExtraAttackOverhead",
+                    "Name": "Overhead",
+                    "Type": "checkbox",
+                    "Default": false
+                },
+                {
+                    "Id": "ReliableRollsAttackRangeSliderFrom",
+                    "Name": "Slider From Value",
+                    "Type": "int",
+                    "Default": 10
+                },
+                {
+                    "Id": "ReliableRollsAttackRangeSliderTo",
+                    "Name": "Slider To Value",
+                    "Type": "int",
+                    "Default": 20
+                },
+                {
+                    "Id": "ReliableRollsAttackRangeCombatLog",
+                    "Name": "Combat Log",
+                    "Type": "checkbox",
+                    "Default": false
+                },
+                {
+                    "Id": "ReliableRollsAttackRangePortraitIndicator",
+                    "Name": "Portrait Indicator",
+                    "Type": "checkbox",
+                    "Default": true
+                },
+                {
+                    "Id": "ReliableRollsAttackRangeOverhead",
+                    "Name": "Overhead",
+                    "Type": "checkbox",
+                    "Default": false
+                },
+                {
+                    "Id": "CriticalStrikeCombatLog",
+                    "Name": "Combat Log",
+                    "Type": "checkbox",
+                    "Default": false
+                },
+                {
+                    "Id": "CriticalStrikePortraitIndicator",
+                    "Name": "Portrait Indicator",
+                    "Type": "checkbox",
+                    "Default": true
+                },
+                {
+                    "Id": "CriticalStrikeOverhead",
+                    "Name": "Overhead",
+                    "Type": "checkbox",
+                    "Default": false
+                },
+                {
+                    "Id": "IgnoreOpportunityAttacksCombatLog",
+                    "Name": "Combat Log",
+                    "Type": "checkbox",
+                    "Default": false
+                },
+                {
+                    "Id": "IgnoreOpportunityAttacksPortraitIndicator",
+                    "Name": "Portrait Indicator",
+                    "Type": "checkbox",
+                    "Default": true
+                },
+                {
+                    "Id": "IgnoreOpportunityAttacksOverhead",
+                    "Name": "Overhead",
+                    "Type": "checkbox",
+                    "Default": false
+                },
+                {
+                    "Id": "ReliableRollsAttackCombatLog",
+                    "Name": "Combat Log",
+                    "Type": "checkbox",
+                    "Default": false
+                },
+                {
+                    "Id": "ReliableRollsAttackPortraitIndicator",
+                    "Name": "Portrait Indicator",
+                    "Type": "checkbox",
+                    "Default": true
+                },
+                {
+                    "Id": "ReliableRollsAttackOverhead",
+                    "Name": "Overhead",
+                    "Type": "checkbox",
+                    "Default": false
+                },
+                {
+                    "Id": "NoCriticalFailureAttackCombatLog",
+                    "Name": "Combat Log",
+                    "Type": "checkbox",
+                    "Default": false
+                },
+                {
+                    "Id": "NoCriticalFailureAttackPortraitIndicator",
+                    "Name": "Portrait Indicator",
+                    "Type": "checkbox",
+                    "Default": true
+                },
+                {
+                    "Id": "NoCriticalFailureAttackOverhead",
+                    "Name": "Overhead",
+                    "Type": "checkbox",
+                    "Default": false
                 }
             ],
             "Handles": {
-                "NameHandle": "PassivesName"
+                "NameHandle": "SettingsName"
+            },
+            "VisibleIf": {
+                "Conditions": [
+                    {
+                        "SettingId": "ShowPageID",
+                        "Operator": "==",
+                        "ExpectedValue": 1
+                    }
+                ]
             }
         }
     ]

@@ -1,99 +1,106 @@
-Ext.RegisterNetListener("ExtraHitPointsPostMessage", function(channel, payload)
-	SetExtraHitPoints()
+Ext.Require("Server/Helpers/passives.lua")
+
+local Passives = {
+	"PASSIVE_RELIABLE_ROLL_IGNORE_OPPORTUNITY_ATTACKS",
+	"PASSIVE_RELIABLE_ROLL_EXTRA_HIT_POINTS",
+	"PASSIVE_RELIABLE_ROLL_EXTRA_DAMAGE",
+	"PASSIVE_RELIABLE_ROLL_CRITICAL_STRIKE",
+	"PASSIVE_RELIABLE_ROLL_DAMAGE",
+	"PASSIVE_RELIABLE_ROLL_DAMAGE_RANGE",
+	"PASSIVE_RELIABLE_ROLL_ATTACK",
+	"PASSIVE_RELIABLE_ROLL_ATTACK_NO_CRITICAL_FAILURE",
+	"PASSIVE_RELIABLE_ROLL_ATTACK_RANGE",
+	"PASSIVE_RELIABLE_ROLL_ATTACK_INTERRUPT",
+	"PASSIVE_RELIABLE_ROLL_ABILITY",
+	"PASSIVE_RELIABLE_ROLL_SKILL",
+	"PASSIVE_RELIABLE_ROLL_SAVING_THROW",
+	"PASSIVE_RELIABLE_ROLL_EXTRA_INITIATIVE",
+	"PASSIVE_RELIABLE_ROLL_EXTRA_ATTACK",
+	"PASSIVE_RELIABLE_ROLL_EXTRA_SAVING_THROW",
+	"PASSIVE_RELIABLE_ROLL_EXTRA_SKILL",
+	"PASSIVE_RELIABLE_ROLL_EXTRA_ABILITY"
+}
+
+Ext.RegisterNetListener("ExtraHitPointsPostMessage", function(_, payload)
+	SetPBoostsValuePropertyFlags("PASSIVE_RELIABLE_ROLL_EXTRA_HIT_POINTS", "BOOST_RELIABLE_ROLL_EXTRA_HIT_POINTS", "ExtraHitPoints", "IncreaseMaxHP", "")
 end)
 
-Ext.RegisterNetListener("ExtraDamagePostMessage", function(channel, payload)
-	SetExtraDamage()
+Ext.RegisterNetListener("ExtraInitiativePostMessage", function(_, payload)
+	SetPBoostsValuePropertyFlags("PASSIVE_RELIABLE_ROLL_EXTRA_INITIATIVE", "BOOST_RELIABLE_ROLL_EXTRA_INITIATIVE", "ExtraInitiative", "Initiative", "")
 end)
 
-Ext.RegisterNetListener("AddToSelectedMemberPostMessage", function(channel, payload)
-	AddAllPassives(Osi.GetHostCharacter())
+Ext.RegisterNetListener("ExtraSavingThrowPostMessage", function(_, payload)
+	SetPBoostsValuePropertyFlags("PASSIVE_RELIABLE_ROLL_EXTRA_SAVING_THROW", "BOOST_RELIABLE_ROLL_EXTRA_SAVING_THROW", "ExtraSavingThrow", "RollBonus(SavingThrow,", "")
 end)
 
-Ext.RegisterNetListener("RemoveFromSelectedMemberPostMessage", function(channel, payload)
-	RemoveAllPassives(Osi.GetHostCharacter())
+Ext.RegisterNetListener("ExtraSkillPostMessage", function(_, payload)
+	SetPBoostsValuePropertyFlags("PASSIVE_RELIABLE_ROLL_EXTRA_SKILL", "BOOST_RELIABLE_ROLL_EXTRA_SKILL", "ExtraSkill", "RollBonus(SkillCheck,", "")
 end)
 
-Ext.RegisterNetListener("AddToAllMembersPostMessage", function(channel, payload)
-	AddReliableRollsToPartyMembers()
+Ext.RegisterNetListener("ExtraAbilityPostMessage", function(_, payload)
+	SetPBoostsValuePropertyFlags("PASSIVE_RELIABLE_ROLL_EXTRA_ABILITY", "BOOST_RELIABLE_ROLL_EXTRA_ABILITY", "ExtraAbility", "RollBonus(RawAbility,", "")
 end)
 
-Ext.RegisterNetListener("RemoveFromAllMembersPostMessage", function(channel, payload)
-	RemoveReliableRollsFromPartyMembers()
+Ext.RegisterNetListener("ReliableRollsAbilityPostMessage", function(_, payload)
+	SetPBoostPropertyFlags("PASSIVE_RELIABLE_ROLL_ABILITY", "BOOST_RELIABLE_ROLL_ABILITY", "ReliableRollsAbility")
 end)
 
-function AddAllPassives(caster)
-	print("Adding all passives to " .. caster)
-	Osi.AddPassive(caster, "PASSIVE_RELIABLE_ROLL_DAMAGE")
-	Osi.AddPassive(caster, "PASSIVE_RELIABLE_ROLL_DAMAGE2")
-	Osi.AddPassive(caster, "PASSIVE_RELIABLE_ROLL_ATTACK")
-	Osi.AddPassive(caster, "PASSIVE_RELIABLE_ROLL_ATTACK2")
-	Osi.AddPassive(caster, "PASSIVE_RELIABLE_ROLL_ABILITY")
-	Osi.AddPassive(caster, "PASSIVE_RELIABLE_ROLL_SKILL")
-	Osi.AddPassive(caster, "PASSIVE_RELIABLE_ROLL_SAVING_THROW")
-	Osi.AddPassive(caster, "PASSIVE_RELIABLE_ROLL_EXTRA_DAMAGE")
-	Osi.AddPassive(caster, "PASSIVE_RELIABLE_ROLL_EXTRA_HIT_POINTS")
-	Osi.AddPassive(caster, "PASSIVE_RELIABLE_ROLL_CRITICAL_STRIKE")
-end
+Ext.RegisterNetListener("ReliableRollsSkillPostMessage", function(_, payload)
+	SetPBoostPropertyFlags("PASSIVE_RELIABLE_ROLL_SKILL", "BOOST_RELIABLE_ROLL_SKILL", "ReliableRollsSkill")
+end)
 
-function RemoveAllPassives(caster)
-	print("Removing all passives from " .. caster)
-	Osi.RemovePassive(caster, "PASSIVE_RELIABLE_ROLL_DAMAGE")
-	Osi.RemovePassive(caster, "PASSIVE_RELIABLE_ROLL_DAMAGE2")
-	Osi.RemovePassive(caster, "PASSIVE_RELIABLE_ROLL_ATTACK")
-	Osi.RemovePassive(caster, "PASSIVE_RELIABLE_ROLL_ATTACK2")
-	Osi.RemovePassive(caster, "PASSIVE_RELIABLE_ROLL_ABILITY")
-	Osi.RemovePassive(caster, "PASSIVE_RELIABLE_ROLL_SKILL")
-	Osi.RemovePassive(caster, "PASSIVE_RELIABLE_ROLL_SAVING_THROW")
-	Osi.RemovePassive(caster, "PASSIVE_RELIABLE_ROLL_EXTRA_DAMAGE")
-	Osi.RemovePassive(caster, "PASSIVE_RELIABLE_ROLL_EXTRA_HIT_POINTS")
-	Osi.RemovePassive(caster, "PASSIVE_RELIABLE_ROLL_CRITICAL_STRIKE")
-end
+Ext.RegisterNetListener("ReliableRollsSavingThrowPostMessage", function(_, payload)
+	SetPBoostPropertyFlags("PASSIVE_RELIABLE_ROLL_SAVING_THROW", "BOOST_RELIABLE_ROLL_SAVING_THROW", "ReliableRollsSavingThrow")
+end)
 
-function RemoveReliableRollsFromPartyMembers()
-	local partyMembers = Osi.DB_PartyMembers:Get(nil)
-	print("RemoveReliableRollsFromPartyMembers")
-	for _, v in pairs(partyMembers) do
-		RemoveAllPassives(v[1])
-	end
-end
+Ext.RegisterNetListener("ExtraDamagePostMessage", function(_, payload)
+	SetPBoostsValuePropertyFlags("PASSIVE_RELIABLE_ROLL_EXTRA_DAMAGE", "BOOST_RELIABLE_ROLL_EXTRA_DAMAGE", "ExtraDamage", "DamageBonus", "")
+end)
 
-function AddReliableRollsToPartyMembers()
-	local partyMembers = Osi.DB_PartyMembers:Get(nil)
-	print("AddReliableRollsToPartyMembers")
-	for _, v in pairs(partyMembers) do
-		AddAllPassives(v[1])
-	end
-end
+Ext.RegisterNetListener("ReliableRollsDamageRangePostMessage", function(_, payload)
+	SetPBoostValueRangePropertyFlags("PASSIVE_RELIABLE_ROLL_DAMAGE_RANGE", "BOOST_RELIABLE_ROLL_DAMAGE_RANGE", "ReliableRollsDamageRange", "Damage", "AnyMainDamageType()")
+end)
 
-function SetExtraHitPoints()
-	local boost = Ext.Stats.Get("BOOST_RELIABLE_ROLL_EXTRA_HIT_POINTS")
-	boost.Boosts = "IncreaseMaxHP(" .. MCM.Get("ExtraHitPoints") .. ")"
-	boost.DescriptionParams = tostring(MCM.Get("ExtraHitPoints"))
-	boost:Sync()
-	local passive = Ext.Stats.Get("PASSIVE_RELIABLE_ROLL_EXTRA_HIT_POINTS")
-	passive.DescriptionParams = tostring(MCM.Get("ExtraHitPoints"))
-	passive:Sync()
-	RefreshPassive("BOOST_RELIABLE_ROLL_EXTRA_HIT_POINTS")
-end
+Ext.RegisterNetListener("ReliableRollsDamagePostMessage", function(_, payload)
+	SetPBoostPropertyFlags("PASSIVE_RELIABLE_ROLL_DAMAGE", "BOOST_RELIABLE_ROLL_DAMAGE", "ReliableRollsDamage")
+end)
 
-function SetExtraDamage()
-	local boost = Ext.Stats.Get("BOOST_RELIABLE_ROLL_EXTRA_DAMAGE")
-	boost.Boosts = "DamageBonus(" .. MCM.Get("ExtraDamage") .. ")"
-	boost.DescriptionParams = tostring(MCM.Get("ExtraDamage"))
-	boost:Sync()
-	local passive = Ext.Stats.Get("PASSIVE_RELIABLE_ROLL_EXTRA_DAMAGE")
-	passive.DescriptionParams = tostring(MCM.Get("ExtraDamage"))
-	passive:Sync()
-	RefreshPassive("BOOST_RELIABLE_ROLL_EXTRA_DAMAGE")
-end
+Ext.RegisterNetListener("ExtraAttackPostMessage", function(_, payload)
+	SetPBoostsValuePropertyFlags("PASSIVE_RELIABLE_ROLL_EXTRA_ATTACK", "BOOST_RELIABLE_ROLL_EXTRA_ATTACK", "ExtraAttack", "RollBonus(Attack,", "")
+end)
 
-function RefreshPassive(passive_name)
-	local partyMembers = Osi.DB_PartyMembers:Get(nil)
-	for _, v in pairs(partyMembers) do
-		if Osi.HasAppliedStatus(v[1], passive_name) == 1 then
-			Osi.RemoveStatus(v[1], passive_name)
-			Osi.ApplyStatus(v[1], passive_name, -1)
-		end
-	end
-end
+Ext.RegisterNetListener("ReliableRollsAttackRangePostMessage", function(_, payload)
+	SetPBoostValueRangePropertyFlags("PASSIVE_RELIABLE_ROLL_ATTACK_RANGE", "BOOST_RELIABLE_ROLL_ATTACK_RANGE", "ReliableRollsAttackRange", "Attack", "")
+end)
+
+Ext.RegisterNetListener("CriticalStrikePostMessage", function(_, payload)
+	SetPBoostPropertyFlags("PASSIVE_RELIABLE_ROLL_CRITICAL_STRIKE", "BOOST_RELIABLE_ROLL_CRITICAL_STRIKE", "CriticalStrike")
+end)
+
+Ext.RegisterNetListener("IgnoreOpportunityAttacksPostMessage", function(_, payload)
+	SetPBoostPropertyFlags("PASSIVE_RELIABLE_ROLL_IGNORE_OPPORTUNITY_ATTACKS", "BOOST_RELIABLE_ROLL_IGNORE_OPPORTUNITY_ATTACKS", "IgnoreOpportunityAttacks")
+end)
+
+Ext.RegisterNetListener("ReliableRollsAttackPostMessage", function(_, payload)
+	SetPBoostPropertyFlags("PASSIVE_RELIABLE_ROLL_ATTACK", "BOOST_RELIABLE_ROLL_ATTACK", "ReliableRollsAttack")
+end)
+
+Ext.RegisterNetListener("NoCriticalFailureAttackPostMessage", function(_, payload)
+	SetPBoostPropertyFlags("PASSIVE_RELIABLE_ROLL_ATTACK_NO_CRITICAL_FAILURE", "BOOST_RELIABLE_ROLL_ATTACK_NO_CRITICAL_FAILURE", "NoCriticalFailureAttack")
+end)
+
+Ext.RegisterNetListener("AddToSelectedMemberPostMessage", function(_, payload)
+	AddAllPassives(Osi.GetHostCharacter(), Passives)
+end)
+
+Ext.RegisterNetListener("RemoveFromSelectedMemberPostMessage", function(_, payload)
+	RemoveAllPassives(Osi.GetHostCharacter(), Passives)
+end)
+
+Ext.RegisterNetListener("AddToAllMembersPostMessage", function(_, payload)
+	AddPassivesToPartyMembers(Passives)
+end)
+
+Ext.RegisterNetListener("RemoveFromAllMembersPostMessage", function(_, payload)
+	RemovePassivesFromPartyMembers(Passives)
+end)

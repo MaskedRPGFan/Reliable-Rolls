@@ -1,33 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <contentList>
-    <content contentuid="ReliableRollsDamageName2" version="1">No Critical Failure: Damage</content>
-    <content contentuid="ReliableRollsDamageDescription2" version="1">Damage Roll is rolling 2 and more.</content>
-    <content contentuid="ReliableRollsDamageName" version="1">Critical Success: Damage</content>
-    <content contentuid="ReliableRollsDamageDescription" version="1">Damage Roll is critical success, rolling 20.</content>
-    <content contentuid="ReliableRollsAttackName2" version="1">No Critical Failure: Attack</content>
-    <content contentuid="ReliableRollsAttackDescription2" version="1">&lt;LSTag Tooltip=&quot;AttackRoll&quot;&gt;Attack Roll&lt;/LSTag&gt; is never critical failure, even if you roll 1.</content>
-    <content contentuid="ReliableRollsAttackName" version="1">Critical Success: Attack</content>
-    <content contentuid="ReliableRollsAttackDescription" version="1">&lt;LSTag Tooltip=&quot;AttackRoll&quot;&gt;Attack Roll&lt;/LSTag&gt; is critical success, rolling 20.</content>
-    <content contentuid="ReliableRollsAbilityName" version="1">Critical Success: Ability</content>
+    <content contentuid="DistributionName" version="1">Distribution</content>
+    <content contentuid="AttackName" version="1">Attack</content>
+    <content contentuid="DamageName" version="1">Damage</content>
+    <content contentuid="OtherName" version="1">Other</content>
+    <content contentuid="IgnoreOpportunityAttacksDescription" version="1">Can move without provoking &lt;LSTag Tooltip=&quot;OpportunityAttack&quot;&gt;Opportunity Attacks&lt;/LSTag&gt;.</content>
+    <content contentuid="ExtraHitPointsDescription" version="1">Gives extra [1] &lt;LSTag Tooltip=&quot;HitPoints&quot;&gt;Hit Points&lt;/LSTag&gt;.</content>
+    <content contentuid="ExtraDamageDescription" version="1">Gives additional [1] damage to all sources.</content>
+    <content contentuid="CriticalStrikeDescription" version="1">Any successful &lt;LSTag Tooltip=&quot;AttackRoll&quot;&gt;Attack Roll&lt;/LSTag&gt; against a creature is a &lt;LSTag Tooltip=&quot;CriticalHit&quot;&gt;Critical Hit&lt;/LSTag&gt;.</content>
+    <content contentuid="ReliableRollsDamageDescription" version="1">Damage Roll is always rolling maximum.</content>
+    <content contentuid="ReliableRollsDamageRangeDescription" version="1">Damage Roll is rolling values from range [1] - [2]. Set min and max to the same if you want to roll only specific value.</content>
+    <content contentuid="ReliableRollsAttackDescription" version="1">&lt;LSTag Tooltip=&quot;AttackRoll&quot;&gt;Attack Roll&lt;/LSTag&gt; is always critical success, always rolling 20.</content>
+    <content contentuid="ReliableRollsAttackRangeDescription" version="1">&lt;LSTag Tooltip=&quot;AttackRoll&quot;&gt;Attack Roll&lt;/LSTag&gt; is rolling values from range [1] - [2]. Set min and max to the same if you want to roll only specific value.</content>
+    <content contentuid="NoCriticalFailureAttackDescription" version="1">&lt;LSTag Tooltip=&quot;AttackRoll&quot;&gt;Attack Roll&lt;/LSTag&gt; is never critical failure, even if you roll 1. You can still miss if the AC of the target is higher than your roll.</content>
+    <content contentuid="ReliableRollsAttackInterruptName" version="1">Reliable Rolls: Attack Interrupt</content>
+    <content contentuid="ReliableRollsAttackInterruptDescription" version="1">&lt;LSTag Tooltip=&quot;AttackRoll&quot;&gt;Attack Roll&lt;/LSTag&gt; is always rolling [1].</content>
     <content contentuid="ReliableRollsAbilityDescription" version="1">&lt;LSTag Tooltip=&quot;AbilityCheck&quot;&gt;Ability Checks&lt;/LSTag&gt; are always rolling 20.</content>
-    <content contentuid="ReliableRollsSkillName" version="1">Critical Success: Skill</content>
     <content contentuid="ReliableRollsSkillDescription" version="1">&lt;LSTag Tooltip=&quot;SkillCheck&quot;&gt;Skill Checks&lt;/LSTag&gt; are always rolling 20.</content>
-    <content contentuid="ReliableRollsSavingThrowName" version="1">Critical Success: Saving Throw</content>
-    <content contentuid="ReliableRollsSavingThrowDescription" version="1">&lt;LSTag Tooltip=&quot;SavingThrow&quot;&gt;Saving Throw&lt;/LSTag&gt; are always rolling 20.</content>
-    <content contentuid="ReliableRollsExtraDamageName" version="1">Extra: Damage</content>
-    <content contentuid="ReliableRollsExtraDamageDescription" version="1">Gives additional [1] damage to all sources.</content>
-    <content contentuid="ReliableRollsHitPointsName" version="1">Extra: Hit Points</content>
-    <content contentuid="ReliableRollsHitPointsDescription" version="1">Gives extra [1] &lt;LSTag Tooltip=&quot;HitPoints&quot;&gt;Hit Points&lt;/LSTag&gt;.</content>
-    <content contentuid="ReliableRollsCriticalStrikeName" version="1">Critical Strike</content>
-    <content contentuid="ReliableRollsCriticalStrikeDescription" version="1">Any successful &lt;LSTag Tooltip=&quot;AttackRoll&quot;&gt;Attack Roll&lt;/LSTag&gt; against a creature is a &lt;LSTag Tooltip=&quot;CriticalHit&quot;&gt;Critical Hit&lt;/LSTag&gt;.</content>
+    <content contentuid="ReliableRollsSavingThrowDescription" version="1">&lt;LSTag Tooltip=&quot;SavingThrow&quot;&gt;Saving Throw&lt;/LSTag&gt; are always rolling 20. Death Saving Throws cannot be set to a specific value, so they received a +20 bonus. It doesn't work on background rolls and is inconsistent unless Larian fixes the engine. Unfortunately, I can't do more.</content>
+    <content contentuid="ReliableRollsSavingThrowExtraDescription" version="1">Mentally challenged passive that took me much longer to make it work properly than all the other passives, lua coding and graphics combined, and yet it failed. If not this passive, I would release v4 at least week earlier. It should have trollface as icon. As from any idiot, you should love this passive, but expect nothing.</content>
+    <content contentuid="ExtraInitiativeDescription" version="1">Gives extra [1] Initiative.</content>
+    <content contentuid="ExtraAttackDescription" version="1">Gives extra [1] &lt;LSTag Tooltip=&quot;AttackRoll&quot;&gt;Attack Roll&lt;/LSTag&gt;.</content>
+    <content contentuid="ExtraSavingThrowDescription" version="1">Gives extra [1] &lt;LSTag Tooltip=&quot;SavingThrow&quot;&gt;Saving Throw&lt;/LSTag&gt;.</content>
+    <content contentuid="ExtraSkillDescription" version="1">Gives extra [1] &lt;LSTag Tooltip=&quot;SkillCheck&quot;&gt;Skill Check&lt;/LSTag&gt;.</content>
+    <content contentuid="ExtraAbilityDescription" version="1">Gives extra [1] &lt;LSTag Tooltip=&quot;AbilityCheck&quot;&gt;Ability Check&lt;/LSTag&gt;.</content>
+    <content contentuid="CombatLogTooltip" version="1">Uncheck this toggle so that the passive is not shown in the combat log after it is applied or removed.</content>
+    <content contentuid="PortraitIndicatorTooltip" version="1">Uncheck this toggle so that the passive is not shown on the character portrait, under their health bar, or if you examine them.</content>
+    <content contentuid="OverheadTooltip" version="1">Uncheck this toggle so that the passive is not shown above character head after it is applied or removed.</content>
+    <content contentuid="Set" version="1">Set</content>
+    <content contentuid="DecreaseValueBy" version="1">Decrease value by %d.</content>
+    <content contentuid="IncreaseValueBy" version="1">Increase value by %d.</content>
+    <content contentuid="ResetValueToDefault" version="1">Reset value to %d.</content>
+    <content contentuid="SetsLowerBound" version="1">Sets the lower value for %s.</content>
+    <content contentuid="SetsUpperBound" version="1">Sets the upper value for %s.</content>
+    <content contentuid="SetsValueFor" version="1">Sets the value for %s.</content>
     <content contentuid="ExtraHitPointsName" version="1">Extra: Hit Points</content>
     <content contentuid="ExtraHitPointsTooltip" version="1">Sets current extra hit points for passive Extra: Hit Points.</content>
-    <content contentuid="DecreaseValueBy" version="1">Decrease value by </content>
-    <content contentuid="IncreaseValueBy" version="1">Increase value by </content>
-    <content contentuid="ResetValueToDefault" version="1">Reset value to </content>
-    <content contentuid="Set" version="1">Set</content>
+    <content contentuid="ExtraInitiativeName" version="1">Extra: Initiative</content>
+    <content contentuid="ExtraInitiativeTooltip" version="1">Sets current extra initiative for passive Extra: Initiative.</content>
+    <content contentuid="ExtraSavingThrowName" version="1">Extra: Saving Throw</content>
+    <content contentuid="ExtraSavingThrowTooltip" version="1">Sets current extra saving throws for passive Extra: Saving Throw.</content>
+    <content contentuid="ExtraSkillName" version="1">Extra: Skill</content>
+    <content contentuid="ExtraSkillTooltip" version="1">Sets current extra skill for passive Extra: Skill.</content>
+    <content contentuid="ExtraAbilityName" version="1">Extra: Ability</content>
+    <content contentuid="ExtraAbilityTooltip" version="1">Sets current extra ability for passive Extra: Ability.</content>
+    <content contentuid="ReliableRollsAbilityName" version="1">Critical Success: Ability</content>
+    <content contentuid="ReliableRollsSkillName" version="1">Critical Success: Skill</content>
+    <content contentuid="ReliableRollsSavingThrowName" version="1">Critical Success: Saving Throw</content>
     <content contentuid="ExtraDamageName" version="1">Extra: Damage</content>
-    <content contentuid="ExtraDamageTooltip" version="1">Sets current extra damage points for passive Extra: Damage.</content>
+    <content contentuid="ExtraDamageTooltip" version="1">Sets current extra damage for passive Extra: Damage.</content>
+    <content contentuid="ReliableRollsDamageRangeName" version="1">Reliable Rolls: Damage Range</content>
+    <content contentuid="ReliableRollsDamageName" version="1">Critical Success: Damage</content>
+    <content contentuid="ExtraAttackName" version="1">Extra: Attack</content>
+    <content contentuid="ReliableRollsAttackRangeName" version="1">Reliable Rolls: Attack Range</content>
+    <content contentuid="CriticalStrikeName" version="1">Critical Strike</content>
+    <content contentuid="IgnoreOpportunityAttacksName" version="1">Ignore Opportunity Attacks</content>
+    <content contentuid="ReliableRollsAttackName" version="1">Reliable Rolls: Attack</content>
+    <content contentuid="NoCriticalFailureAttackName" version="1">No Critical Failure: Attack</content>
     <content contentuid="AddToSelectedMemberName" version="1">Add To Selected Member</content>
     <content contentuid="AddToSelectedMemberTooltip" version="1">Add Reliable Rolls passives to currently selected Party Member.</content>
     <content contentuid="RemoveFromSelectedMemberName" version="1">Remove From Selected Member</content>
@@ -36,6 +65,5 @@
     <content contentuid="AddToAllMembersTooltip" version="1">Add Reliable Rolls passives to all current Party Members.</content>
     <content contentuid="RemoveFromAllMembersName" version="1">Remove From All Members</content>
     <content contentuid="RemoveFromAllMembersTooltip" version="1">Remove Reliable Rolls passives from all current Party Members.</content>
-    <content contentuid="GeneralName" version="1">General</content>
-    <content contentuid="PassivesName" version="1">Passives</content>
+    <content contentuid="SettingsName" version="1">Settings</content>
 </contentList>
