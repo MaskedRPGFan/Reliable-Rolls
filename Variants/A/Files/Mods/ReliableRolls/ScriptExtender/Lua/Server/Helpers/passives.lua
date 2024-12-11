@@ -39,7 +39,11 @@ function IF(condition)
 end
 
 function BOOST(type, id)
-	local char = "("
+	local char = "%"
+	if string.find(type, char, 1, true) then
+		return string.format(type, MCM.Get(id))
+	end
+	char = "("
 	if string.find(type, char, 1, true) then
 		return type .. MCM.Get(id) .. ")"
 	end
@@ -70,8 +74,11 @@ function IF_MIN_MAX(condition, type, id_min, id_max)
 	return IF_MIN(condition, type, id_min) .. ";" .. IF_MAX(condition, type, id_max)
 end
 
-function AssignDisplayFlags(dcl, dpi, doh)
+function AssignDisplayFlags(dcl, dpi, doh, ir)
 	local flagsList = {}
+	if not ir then
+		table.insert(flagsList, "IgnoreResting")
+	end
 	if not dcl then
 		table.insert(flagsList, "DisableCombatlog")
 	end
@@ -93,7 +100,7 @@ function SetDescriptionParams(status, id, id2)
 end
 
 function SetPropertyFlags(status, id)
-	status.StatusPropertyFlags = AssignDisplayFlags(MCM.Get(id .. "CombatLog"), MCM.Get(id .. "PortraitIndicator"), MCM.Get(id .. "Overhead"))
+	status.StatusPropertyFlags = AssignDisplayFlags(MCM.Get(id .. "CombatLog"), MCM.Get(id .. "PortraitIndicator"), MCM.Get(id .. "Overhead"), true)
 end
 
 function SetStatusPropertyFlags(status_name, id)
@@ -112,7 +119,7 @@ end
 
 function SetStatusPropertyFlagsDescriptionParams(status_name, flag_id, id, id2)
 	local status = Ext.Stats.Get(status_name)
-	SetPropertyFlags(boost, flag_id)
+	SetPropertyFlags(status, flag_id)
 	SetDescriptionParams(status, id, id2)
 	status:Sync()
 	RefreshStatus(status_name)
@@ -176,13 +183,7 @@ end
 
 function SetStatusSetRoll(status_name, id, params_id)
 	local status = Ext.Stats.Get(status_name)
-	_D(status["Properties"])
-	_D(status["Properties"][0])
-	_D(status["Properties"][0]["Functors"])
-	_D(status["Properties"][0]["Functors"][0])
-	_D(status["Properties"]["Functors"]["Roll"])
-	_D(status["Properties"]["Functors"][0]["Roll"])
-	status["Properties"][0]["Functors"][0]["Roll"] = MCM.Get(id)
+	status["Properties"][1]["Functors"][1]["Roll"] = MCM.Get(id)
 	if params_id and params_id ~= "" then
 		SetDescriptionParams(status, params_id)
 	end

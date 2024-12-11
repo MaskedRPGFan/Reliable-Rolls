@@ -38,6 +38,21 @@ function IsAnySkillChecked(entity)
 end
 
 
+function AnyAttackRollAbility()
+    local strength = context.HitDescription.AttackAbility == Ability.Strength
+    local dexterity = context.HitDescription.AttackAbility == Ability.Dexterity
+    local constitution = context.HitDescription.AttackAbility == Ability.Constitution
+    local wisdom = context.HitDescription.AttackAbility == Ability.Wisdom
+    local intelligence = context.HitDescription.AttackAbility == Ability.Intelligence
+    local charisma = context.HitDescription.AttackAbility == Ability.Charisma
+    return ConditionResult(strength or dexterity or constitution or wisdom or intelligence or charisma)
+end
+
+function IsAbilitySkillChecked(entity)
+    return IsAnySkillChecked(entity) or IsAnyAbilityChecked(entity) or AnyAttackRollAbility()
+end
+
+
 function AnyMainDamageType(entity)
     local entity = entity or context.Source
 
@@ -58,7 +73,6 @@ function AnyMainDamageType(entity)
     return ConditionResult(Slashing or Piercing or Bludgeoning or Acid or Thunder or Necrotic or Fire or Lightning or Cold or Psychic or Poison or Radiant or Force)
 end
 
-
 function IsValidAttack(entity)
     local entity = entity or context.Source
 
@@ -71,5 +85,7 @@ function IsValidAttack(entity)
     local MeleeUnarmedAttack = context.HitDescription.AttackType==AttackType.MeleeUnarmedAttack
     local RangedUnarmedAttack = context.HitDescription.AttackType==AttackType.RangedUnarmedAttack
 
-    return ConditionResult(IsSpell() or MeleeOffHandWeaponAttack or RangedOffHandWeaponAttack or MeleeWeaponAttack or RangedWeaponAttack or MeleeSpellAttack or RangedSpellAttack or MeleeUnarmedAttack or RangedUnarmedAttack)
+    -- return ConditionResult(IsSpell() or MeleeOffHandWeaponAttack or RangedOffHandWeaponAttack or MeleeWeaponAttack or RangedWeaponAttack or MeleeSpellAttack or RangedSpellAttack or MeleeUnarmedAttack or RangedUnarmedAttack)
+    -- return (IsAttack() and HasAttackRoll()) or AnyAttackRollAbility()
+    return HasAttackRoll() or IsMeleeAttack() or IsRangedAttack() or AnyAttackRollAbility()
 end

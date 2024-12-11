@@ -13,10 +13,16 @@ Mods.BG3MCM.IMGUIAPI:InsertModMenuTab(ModuleUUID, Ext.Loca.GetTranslatedString("
 	tabs_stats['OtherTabCreated'] = true
 
 	CreateIntSliderWidget(tabHeader, "ExtraHitPoints", "ExtraHitPointsName", "ExtraHitPointsTooltip", -1000, 10000, 1, 100, "ReliableRollsExtraHitPoints")
+	CreateIntSliderWidget(tabHeader, "ExtraArmor", "ExtraArmorName", "ExtraArmorTooltip", -50, 100, 1, 10, "ReliableRollsExtraArmor")
 	CreateIntSliderWidget(tabHeader, "ExtraInitiative", "ExtraInitiativeName", "ExtraInitiativeTooltip", -10, 100, 1, 5, "ReliableRollsExtraInitiative")
 	CreateIntSliderWidget(tabHeader, "ExtraSavingThrow", "ExtraSavingThrowName", "ExtraSavingThrowTooltip", -100, 100, 1, 5, "ReliableRollsExtraSavingThrow")
 	CreateIntSliderWidget(tabHeader, "ExtraSkill", "ExtraSkillName", "ExtraSkillTooltip", -100, 100, 1, 5, "ReliableRollsExtraSkill")
 	CreateIntSliderWidget(tabHeader, "ExtraAbility", "ExtraAbilityName", "ExtraAbilityTooltip", -100, 100, 1, 5, "ReliableRollsExtraAbility")
+	CreateIntSliderWidget(tabHeader, "ExtraSpellSaveDC", "ExtraSpellSaveDCName", "ExtraSpellSaveDCTooltip", -100, 100, 1, 5, "ReliableRollsExtraSpellSaveDC")
+	CreateIntSliderWidget(tabHeader, "ExtraMovement", "ExtraMovementName", "ExtraMovementTooltip", -100, 100, 1, 5, "ReliableRollsExtraMovement")
+	CreateIntSliderWidget(tabHeader, "ExtraActionPoint", "ExtraActionPointName", "ExtraActionPointTooltip", -10, 100, 1, 5, "ReliableRollsExtraActionPoint")
+	CreateIntSliderWidget(tabHeader, "ExtraBonusActionPoint", "ExtraBonusActionPointName", "ExtraBonusActionPointTooltip", -10, 100, 1, 5, "ReliableRollsExtraBonusActionPoint")
+	CreateIntSliderWidget(tabHeader, "ExtraReactionActionPoint", "ExtraReactionActionPointName", "ExtraReactionActionPointTooltip", -1, 100, 1, 5, "ReliableRollsExtraReactionActionPoint")
 	CreateDisplayFlagsWidget(tabHeader, "ReliableRollsAbility", "ReliableRollsAbilityName", "ReliableRollsAbility")
 	CreateDisplayFlagsWidget(tabHeader, "ReliableRollsSkill", "ReliableRollsSkillName", "ReliableRollsSkill")
 	CreateDisplayFlagsWidget(tabHeader, "ReliableRollsSavingThrow", "ReliableRollsSavingThrowName", "ReliableRollsSavingThrow")
@@ -39,6 +45,7 @@ Mods.BG3MCM.IMGUIAPI:InsertModMenuTab(ModuleUUID, Ext.Loca.GetTranslatedString("
 
 	tabs_stats['AttackTabCreated'] = true
 
+	CreateIntSliderWidget(tabHeader, "ReliableRollsAttackInterrupt", "ReliableRollsAttackInterruptName", "", 1, 20, 1, 1, "ReliableRollsAttackInterrupt")
 	CreateIntSliderWidget(tabHeader, "ExtraAttack", "ExtraAttackName", "", -100, 100, 1, 5, "ReliableRollsExtraAttack")
 	CreateRangeIntSliderWidget(tabHeader, "ReliableRollsAttackRange", "ReliableRollsAttackRangeName", "", 1, 20, 1, 10, 20, "ReliableRollsAttackRange")
 	CreateDisplayFlagsWidget(tabHeader, "CriticalStrike", "CriticalStrikeName", "ReliableRollsCriticalStrike")

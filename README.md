@@ -1,6 +1,6 @@
 <p align="center"><a href="https://ko-fi.com/maskedrpgfan"><img src="https://i.postimg.cc/Nj2mWwpw/Ko-fi-small.png"/></a><a href="https://buymeacoffee.com/maskedrpgfan"><img src="https://i.postimg.cc/MKTymBBH/Buy-Me-ACoffee-small.png"/></a><a href="https://www.patreon.com/maskedrpgfan"><img src="https://i.postimg.cc/28Knc5dw/Patreon-small.png"/></a></p>
 
-<p align="center"><img src="https://i.postimg.cc/kg8n9PRK/Reliable-Rolls-Damage.png"/><img src="https://i.postimg.cc/QxvXRdCj/Reliable-Rolls-Damage-Range.png"/><img src="https://i.postimg.cc/QtGKNt42/Reliable-Rolls-Extra-Damage.png"/><img src="https://i.postimg.cc/NMQGpCMT/No-Critical-Failure-Attack.png"/><img src="https://i.postimg.cc/kG4JdVWg/Reliable-Rolls-Attack.png"/><img src="https://i.postimg.cc/D0M2f2cd/Reliable-Rolls-Attack-Interrupt.png"/><img src="https://i.postimg.cc/02zkWw8t/Reliable-Rolls-Attack-Range.png"/><img src="https://i.postimg.cc/G23rkB7x/Reliable-Rolls-Extra-Attack.png"/><img src="https://i.postimg.cc/W1ddMrQR/Reliable-Rolls-Critical-Strike.png"/><img src="https://i.postimg.cc/QN4NJbr9/Reliable-Rolls-Ability.png"/><img src="https://i.postimg.cc/d0YJVNGX/Reliable-Rolls-Extra-Ability.png"/><img src="https://i.postimg.cc/y6bBZ8F0/Reliable-Rolls-Saving-Throw.png"/><img src="https://i.postimg.cc/xCsQg0BD/Reliable-Rolls-Extra-Saving-Throw.png"/><img src="https://i.postimg.cc/FKysbX9N/Reliable-Rolls-Skill.png"/><img src="https://i.postimg.cc/7hfkWFyC/Reliable-Rolls-Extra-Skill.png"/><img src="https://i.postimg.cc/GmJ5kbBc/Reliable-Rolls-Ignore-OA.png"/><img src="https://i.postimg.cc/HxwcrgFV/Reliable-Rolls-Extra-Hit-Points.png"/><img src="https://i.postimg.cc/43Qs7v53/Reliable-Rolls-Extra-Initiative.png"/></p>
+<p align="center"><img src="https://i.postimg.cc/kg8n9PRK/Reliable-Rolls-Damage.png"/><img src="https://i.postimg.cc/QxvXRdCj/Reliable-Rolls-Damage-Range.png"/><img src="https://i.postimg.cc/QtGKNt42/Reliable-Rolls-Extra-Damage.png"/><img src="https://i.postimg.cc/NMQGpCMT/No-Critical-Failure-Attack.png"/><img src="https://i.postimg.cc/kG4JdVWg/Reliable-Rolls-Attack.png"/><img src="https://i.postimg.cc/D0M2f2cd/Reliable-Rolls-Attack-Interrupt.png"/><img src="https://i.postimg.cc/02zkWw8t/Reliable-Rolls-Attack-Range.png"/><img src="https://i.postimg.cc/G23rkB7x/Reliable-Rolls-Extra-Attack.png"/><img src="https://i.postimg.cc/W1ddMrQR/Reliable-Rolls-Critical-Strike.png"/><img src="https://i.postimg.cc/QN4NJbr9/Reliable-Rolls-Ability.png"/><img src="https://i.postimg.cc/d0YJVNGX/Reliable-Rolls-Extra-Ability.png"/><img src="https://i.postimg.cc/y6bBZ8F0/Reliable-Rolls-Saving-Throw.png"/><img src="https://i.postimg.cc/xCsQg0BD/Reliable-Rolls-Extra-Saving-Throw.png"/><img src="https://i.postimg.cc/FKysbX9N/Reliable-Rolls-Skill.png"/><img src="https://i.postimg.cc/7hfkWFyC/Reliable-Rolls-Extra-Skill.png"/><img src="https://i.postimg.cc/GmJ5kbBc/Reliable-Rolls-Ignore-OA.png"/><img src="https://i.postimg.cc/HxwcrgFV/Reliable-Rolls-Extra-Hit-Points.png"/><img src="https://i.postimg.cc/43Qs7v53/Reliable-Rolls-Extra-Initiative.png"/><img src="https://i.postimg.cc/G3qDpvxr/Reliable-Rolls-Extra-Spell-Save-DC.png"/><img src="https://i.postimg.cc/GpGY3NqS/Reliable-Rolls-Extra-Action-Point.png"/><img src="https://i.postimg.cc/J06HdWzt/Reliable-Rolls-Extra-Reaction-Action-Point.png"/><img src="https://i.postimg.cc/rsFtJpcv/Reliable-Rolls-Extra-Bonus-Action-Point.png"/><img src="https://i.postimg.cc/4NR3sdrZ/Reliable-Rolls-Extra-Movement.png"/><img src="https://i.postimg.cc/MTYQVBk7/Reliable-Rolls-Extra-Armor.png"/></p>
 
 # Reliable Rolls
 
@@ -34,10 +34,10 @@ Gives additional 100 (value adjustable in MCM, from -100 to 1000) [Damage](https
 [Attack Roll](https://bg3.wiki/wiki/Attack_Rolls) is never critical failure, even if you roll 1. You can still miss if the AC of the target is higher than your roll.
 
 ![https://i.postimg.cc/kG4JdVWg/Reliable-Rolls-Attack.png](https://i.postimg.cc/kG4JdVWg/Reliable-Rolls-Attack.png)**Critical Success: Attack**
-[Attack Roll](https://bg3.wiki/wiki/Attack_Rolls) is critical success, rolling 20.
+[Attack Roll](https://bg3.wiki/wiki/Attack_Rolls) is critical success, rolling 20. Gives Advantage on Attack Rolls.
 
 ![https://i.postimg.cc/D0M2f2cd/Reliable-Rolls-Attack-Interrupt.png](https://i.postimg.cc/D0M2f2cd/Reliable-Rolls-Attack-Interrupt.png)**Reliable Rolls: Attack Interrupt**
-[Attack Roll](https://bg3.wiki/wiki/Attack_Rolls) is always rolling 1 (Value will be adjustable in MCM, from 1 to 20, when I find how to set StatsFunctor for Interrupt).
+[Attack Roll](https://bg3.wiki/wiki/Attack_Rolls) is always rolling 1 (Value adjustable in MCM, from 1 to 20).
 
 ![https://i.postimg.cc/02zkWw8t/Reliable-Rolls-Attack-Range.png](https://i.postimg.cc/02zkWw8t/Reliable-Rolls-Attack-Range.png)**Reliable Rolls: Attack Range**
 [Attack Roll](https://bg3.wiki/wiki/Attack_Rolls) is rolling values from range 10-20 (Value adjustable in MCM, from 1 to 20). Set min and max to the same if you want to roll only specific value.
@@ -49,19 +49,19 @@ Gives extra 5 (Value adjustable in MCM, from -100 to 100) [Attack Roll](https://
 Any successful [Attack Roll](https://bg3.wiki/wiki/Attack_Rolls) against a creature is a [Critical Hit](https://bg3.wiki/wiki/Critical_hit).
 
 ![https://i.postimg.cc/QN4NJbr9/Reliable-Rolls-Ability.png](https://i.postimg.cc/QN4NJbr9/Reliable-Rolls-Ability.png)**Critical Success: Ability**
-[Ability Checks](https://bg3.wiki/wiki/Abilities#Ability_checks) are always rolling 20.
+[Ability Checks](https://bg3.wiki/wiki/Abilities#Ability_checks) are always rolling 20. Gives Advantage on all Ability Checks.
 
 ![https://i.postimg.cc/d0YJVNGX/Reliable-Rolls-Extra-Ability.png](https://i.postimg.cc/d0YJVNGX/Reliable-Rolls-Extra-Ability.png)**Extra: Ability**
 Gives extra 5 (Value adjustable in MCM, from -100 to 100) [Ability Checks](https://bg3.wiki/wiki/Abilities#Ability_checks).
 
 ![https://i.postimg.cc/y6bBZ8F0/Reliable-Rolls-Saving-Throw.png](https://i.postimg.cc/y6bBZ8F0/Reliable-Rolls-Saving-Throw.png)**Critical Success: Saving Throw**
-[Saving Throws](https://bg3.wiki/wiki/Saving_throws) are always rolling 20. Death Saving Throws cannot be set to a specific value, so they received a +20 bonus. It doesn't work on background rolls and is inconsistent unless Larian fixes the engine. Unfortunately, I can't do more.
+[Saving Throws](https://bg3.wiki/wiki/Saving_throws) are always rolling 20. Death Saving Throws cannot be set to a specific value, so they received a +20 bonus. Gives Advantage on all Saving Throws.
 
 ![https://i.postimg.cc/xCsQg0BD/Reliable-Rolls-Extra-Saving-Throw.png](https://i.postimg.cc/xCsQg0BD/Reliable-Rolls-Extra-Saving-Throw.png)**Extra: Saving Throw**
 Gives extra 5 (Value adjustable in MCM, from -100 to 100) [Saving Throws](https://bg3.wiki/wiki/Saving_throws).
 
 ![https://i.postimg.cc/FKysbX9N/Reliable-Rolls-Skill.png](https://i.postimg.cc/FKysbX9N/Reliable-Rolls-Skill.png)**Critical Success: Skill**
-[Skill Checks](https://bg3.wiki/wiki/Abilities#Ability_checks) are always rolling 20.
+[Skill Checks](https://bg3.wiki/wiki/Abilities#Ability_checks) are always rolling 20. Gives Advantage on all Skill Checks.
 
 ![https://i.postimg.cc/7hfkWFyC/Reliable-Rolls-Extra-Skill.png](https://i.postimg.cc/7hfkWFyC/Reliable-Rolls-Extra-Skill.png)**Extra: Skill**
 Gives extra 5 (Value adjustable in MCM, from -100 to 100) [Skill Checks](https://bg3.wiki/wiki/Abilities#Ability_checks).
@@ -74,6 +74,24 @@ Gives additional 100 (Value adjustable in MCM, from -1000 to 10000) [Hit Points]
 
 ![https://i.postimg.cc/43Qs7v53/Reliable-Rolls-Extra-Initiative.png](https://i.postimg.cc/43Qs7v53/Reliable-Rolls-Extra-Initiative.png)**Extra: Initiative**
 Gives extra 5 (Value adjustable in MCM, from -10 to 100) [Initiative](https://bg3.wiki/wiki/Initiative).
+
+![https://i.postimg.cc/G3qDpvxr/Reliable-Rolls-Extra-Spell-Save-DC.png](https://i.postimg.cc/G3qDpvxr/Reliable-Rolls-Extra-Spell-Save-DC.png)**Extra: Spell Save DC**
+Gives extra 5 (Value adjustable in MCM, from -100 to 100) [Spell Save DC](https://bg3.wiki/wiki/Saving_throws#Difficulty_Class).
+
+![https://i.postimg.cc/GpGY3NqS/Reliable-Rolls-Extra-Action-Point.png](https://i.postimg.cc/GpGY3NqS/Reliable-Rolls-Extra-Action-Point.png)**Extra: Action Point**
+Gives extra 5 (Value adjustable in MCM, from -10 to 100) [Action Point](https://bg3.wiki/wiki/Actions).
+
+![https://i.postimg.cc/rsFtJpcv/Reliable-Rolls-Extra-Bonus-Action-Point.png](https://i.postimg.cc/rsFtJpcv/Reliable-Rolls-Extra-Bonus-Action-Point.png)**Extra: Bonus Action Point**
+Gives extra 5 (Value adjustable in MCM, from -10 to 100) [Bonus Action Point](https://bg3.wiki/wiki/Actions).
+
+![https://i.postimg.cc/J06HdWzt/Reliable-Rolls-Extra-Reaction-Action-Point.png](https://i.postimg.cc/J06HdWzt/Reliable-Rolls-Extra-Reaction-Action-Point.png)**Extra: Reaction Action Point**
+Gives extra 5 (Value adjustable in MCM, from -1 to 100) [Reaction Action Point](https://bg3.wiki/wiki/Actions).
+
+![https://i.postimg.cc/4NR3sdrZ/Reliable-Rolls-Extra-Movement.png](https://i.postimg.cc/4NR3sdrZ/Reliable-Rolls-Extra-Movement.png)**Extra: Movement**
+Gives extra 5 (Value adjustable in MCM, from -100 to 100) [Movement](https://bg3.wiki/wiki/Resources#Movement_speed).
+
+![https://i.postimg.cc/MTYQVBk7/Reliable-Rolls-Extra-Armor.png](https://i.postimg.cc/MTYQVBk7/Reliable-Rolls-Extra-Armor.png)**Extra: Armor**
+Gives extra 5 (Value adjustable in MCM, from -50 to 100) [Armor](https://bg3.wiki/wiki/Armor).
 
 
 ## TO-DO

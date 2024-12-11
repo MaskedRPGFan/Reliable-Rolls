@@ -10,20 +10,26 @@
     <content contentuid="CriticalStrikeDescription" version="1">Any successful &lt;LSTag Tooltip=&quot;AttackRoll&quot;&gt;Attack Roll&lt;/LSTag&gt; against a creature is a &lt;LSTag Tooltip=&quot;CriticalHit&quot;&gt;Critical Hit&lt;/LSTag&gt;.</content>
     <content contentuid="ReliableRollsDamageDescription" version="1">Damage Roll is always rolling maximum.</content>
     <content contentuid="ReliableRollsDamageRangeDescription" version="1">Damage Roll is rolling values from range [1] - [2]. Set min and max to the same if you want to roll only specific value.</content>
-    <content contentuid="ReliableRollsAttackDescription" version="1">&lt;LSTag Tooltip=&quot;AttackRoll&quot;&gt;Attack Roll&lt;/LSTag&gt; is always critical success, always rolling 20.</content>
+    <content contentuid="ReliableRollsAttackDescription" version="1">&lt;LSTag Tooltip=&quot;AttackRoll&quot;&gt;Attack Roll&lt;/LSTag&gt; is always critical success, always rolling 20. Gives &lt;LSTag Tooltip=&quot;Advantage&quot;&gt;Advantage&lt;/LSTag&gt; on &lt;LSTag Tooltip=&quot;AttackRoll&quot;&gt;Attack Rolls&lt;/LSTag&gt;.</content>
     <content contentuid="ReliableRollsAttackRangeDescription" version="1">&lt;LSTag Tooltip=&quot;AttackRoll&quot;&gt;Attack Roll&lt;/LSTag&gt; is rolling values from range [1] - [2]. Set min and max to the same if you want to roll only specific value.</content>
     <content contentuid="NoCriticalFailureAttackDescription" version="1">&lt;LSTag Tooltip=&quot;AttackRoll&quot;&gt;Attack Roll&lt;/LSTag&gt; is never critical failure, even if you roll 1. You can still miss if the AC of the target is higher than your roll.</content>
     <content contentuid="ReliableRollsAttackInterruptName" version="1">Reliable Rolls: Attack Interrupt</content>
     <content contentuid="ReliableRollsAttackInterruptDescription" version="1">&lt;LSTag Tooltip=&quot;AttackRoll&quot;&gt;Attack Roll&lt;/LSTag&gt; is always rolling [1].</content>
-    <content contentuid="ReliableRollsAbilityDescription" version="1">&lt;LSTag Tooltip=&quot;AbilityCheck&quot;&gt;Ability Checks&lt;/LSTag&gt; are always rolling 20.</content>
-    <content contentuid="ReliableRollsSkillDescription" version="1">&lt;LSTag Tooltip=&quot;SkillCheck&quot;&gt;Skill Checks&lt;/LSTag&gt; are always rolling 20.</content>
-    <content contentuid="ReliableRollsSavingThrowDescription" version="1">&lt;LSTag Tooltip=&quot;SavingThrow&quot;&gt;Saving Throw&lt;/LSTag&gt; are always rolling 20. Death Saving Throws cannot be set to a specific value, so they received a +20 bonus. It doesn't work on background rolls and is inconsistent unless Larian fixes the engine. Unfortunately, I can't do more.</content>
-    <content contentuid="ReliableRollsSavingThrowExtraDescription" version="1">Mentally challenged passive that took me much longer to make it work properly than all the other passives, lua coding and graphics combined, and yet it failed. If not this passive, I would release v4 at least week earlier. It should have trollface as icon. As from any idiot, you should love this passive, but expect nothing.</content>
-    <content contentuid="ExtraInitiativeDescription" version="1">Gives extra [1] Initiative.</content>
-    <content contentuid="ExtraAttackDescription" version="1">Gives extra [1] &lt;LSTag Tooltip=&quot;AttackRoll&quot;&gt;Attack Roll&lt;/LSTag&gt;.</content>
-    <content contentuid="ExtraSavingThrowDescription" version="1">Gives extra [1] &lt;LSTag Tooltip=&quot;SavingThrow&quot;&gt;Saving Throw&lt;/LSTag&gt;.</content>
-    <content contentuid="ExtraSkillDescription" version="1">Gives extra [1] &lt;LSTag Tooltip=&quot;SkillCheck&quot;&gt;Skill Check&lt;/LSTag&gt;.</content>
-    <content contentuid="ExtraAbilityDescription" version="1">Gives extra [1] &lt;LSTag Tooltip=&quot;AbilityCheck&quot;&gt;Ability Check&lt;/LSTag&gt;.</content>
+    <content contentuid="ReliableRollsAbilityDescription" version="1">&lt;LSTag Tooltip=&quot;AbilityCheck&quot;&gt;Ability Checks&lt;/LSTag&gt; are always rolling 20. Gives &lt;LSTag Tooltip=&quot;Advantage&quot;&gt;Advantage&lt;/LSTag&gt; on all &lt;LSTag Tooltip=&quot;AbilityCheck&quot;&gt;Ability Checks&lt;/LSTag&gt;.</content>
+    <content contentuid="ReliableRollsSkillDescription" version="1">&lt;LSTag Tooltip=&quot;SkillCheck&quot;&gt;Skill Checks&lt;/LSTag&gt; are always rolling 20. Gives &lt;LSTag Tooltip=&quot;Advantage&quot;&gt;Advantage&lt;/LSTag&gt; on all &lt;LSTag Tooltip=&quot;SkillCheck&quot;&gt;Skill Checks&lt;/LSTag&gt;.</content>
+    <content contentuid="ReliableRollsSavingThrowDescription" version="1">&lt;LSTag Tooltip=&quot;SavingThrow&quot;&gt;Saving Throw&lt;/LSTag&gt; are always rolling 20. Death Saving Throws cannot be set to a specific value, so they received a +20 bonus. Gives &lt;LSTag Tooltip=&quot;Advantage&quot;&gt;Advantage&lt;/LSTag&gt; on all &lt;LSTag Tooltip=&quot;SavingThrow&quot;&gt;Saving Throws&lt;/LSTag&gt;.</content>
+    <content contentuid="ReliableRollsSavingThrowExtraDescription" version="1"></content>
+    <content contentuid="ExtraInitiativeDescription" version="1">Gives extra [1] to Initiative.</content>
+    <content contentuid="ExtraAttackDescription" version="1">Gives extra [1] to &lt;LSTag Tooltip=&quot;AttackRoll&quot;&gt;Attack Roll&lt;/LSTag&gt;.</content>
+    <content contentuid="ExtraSavingThrowDescription" version="1">Gives extra [1] to &lt;LSTag Tooltip=&quot;SavingThrow&quot;&gt;Saving Throw&lt;/LSTag&gt;.</content>
+    <content contentuid="ExtraSkillDescription" version="1">Gives extra [1] to &lt;LSTag Tooltip=&quot;SkillCheck&quot;&gt;Skill Check&lt;/LSTag&gt;.</content>
+    <content contentuid="ExtraAbilityDescription" version="1">Gives extra [1] to &lt;LSTag Tooltip=&quot;AbilityCheck&quot;&gt;Ability Check&lt;/LSTag&gt;.</content>
+    <content contentuid="ExtraSpellSaveDCDescription" version="1">Gives extra [1] to &lt;LSTag Tooltip=&quot;SpellDifficultyClass&quot;&gt;Spell Save DC&lt;/LSTag&gt;.</content>
+    <content contentuid="ExtraArmorDescription" version="1">Gives extra [1] to &lt;LSTag Tooltip=&quot;ArmourClass&quot;&gt;Armour Class&lt;/LSTag&gt;.</content>
+    <content contentuid="ExtraMovementDescription" version="1">&lt;LSTag Tooltip=&quot;MovementSpeed&quot;&gt;Movement speed&lt;/LSTag&gt; increased by [1].</content>
+    <content contentuid="ExtraActionPointDescription" version="1">Gives extra [1] to &lt;LSTag Type=&quot;ActionResource&quot; Tooltip=&quot;ActionPoint&quot;&gt;Actions&lt;/LSTag&gt;.</content>
+    <content contentuid="ExtraBonusActionPointDescription" version="1">Gives extra [1] to &lt;LSTag Type=&quot;ActionResource&quot; Tooltip=&quot;BonusActionPoint&quot;&gt;Bonus actions&lt;/LSTag&gt;.</content>
+    <content contentuid="ExtraReactionActionPointDescription" version="1">Gives extra [1] to &lt;LSTag Type=&quot;ActionResource&quot; Tooltip=&quot;ReactionActionPoint&quot;&gt;Reaction actions&lt;/LSTag&gt;.</content>
     <content contentuid="CombatLogTooltip" version="1">Uncheck this toggle so that the passive is not shown in the combat log after it is applied or removed.</content>
     <content contentuid="PortraitIndicatorTooltip" version="1">Uncheck this toggle so that the passive is not shown on the character portrait, under their health bar, or if you examine them.</content>
     <content contentuid="OverheadTooltip" version="1">Uncheck this toggle so that the passive is not shown above character head after it is applied or removed.</content>
@@ -35,15 +41,27 @@
     <content contentuid="SetsUpperBound" version="1">Sets the upper value for %s.</content>
     <content contentuid="SetsValueFor" version="1">Sets the value for %s.</content>
     <content contentuid="ExtraHitPointsName" version="1">Extra: Hit Points</content>
-    <content contentuid="ExtraHitPointsTooltip" version="1">Sets current extra hit points for passive Extra: Hit Points.</content>
+    <content contentuid="ExtraHitPointsTooltip" version="1">Sets extra hit points for passive Extra: Hit Points.</content>
+    <content contentuid="ExtraArmorName" version="1">Extra: Armour Class</content>
+    <content contentuid="ExtraArmorTooltip" version="1">Sets extra armor for passive Extra: Armour Class.</content>
     <content contentuid="ExtraInitiativeName" version="1">Extra: Initiative</content>
-    <content contentuid="ExtraInitiativeTooltip" version="1">Sets current extra initiative for passive Extra: Initiative.</content>
+    <content contentuid="ExtraInitiativeTooltip" version="1">Sets extra initiative for passive Extra: Initiative.</content>
     <content contentuid="ExtraSavingThrowName" version="1">Extra: Saving Throw</content>
-    <content contentuid="ExtraSavingThrowTooltip" version="1">Sets current extra saving throws for passive Extra: Saving Throw.</content>
+    <content contentuid="ExtraSavingThrowTooltip" version="1">Sets extra saving throws for passive Extra: Saving Throw.</content>
     <content contentuid="ExtraSkillName" version="1">Extra: Skill</content>
-    <content contentuid="ExtraSkillTooltip" version="1">Sets current extra skill for passive Extra: Skill.</content>
+    <content contentuid="ExtraSkillTooltip" version="1">Sets extra skill for passive Extra: Skill.</content>
     <content contentuid="ExtraAbilityName" version="1">Extra: Ability</content>
-    <content contentuid="ExtraAbilityTooltip" version="1">Sets current extra ability for passive Extra: Ability.</content>
+    <content contentuid="ExtraAbilityTooltip" version="1">Sets extra ability for passive Extra: Ability.</content>
+    <content contentuid="ExtraSpellSaveDCName" version="1">Extra: Spell Save DC</content>
+    <content contentuid="ExtraSpellSaveDCTooltip" version="1">Sets extra spell save DC for passive Extra: Spell Save DC.</content>
+    <content contentuid="ExtraMovementName" version="1">Extra: Movement</content>
+    <content contentuid="ExtraMovementTooltip" version="1">Sets extra movement for passive Extra: Movement.</content>
+    <content contentuid="ExtraActionPointName" version="1">Extra: Action Point</content>
+    <content contentuid="ExtraActionPointTooltip" version="1">Sets extra action point for passive Extra: Action Point.</content>
+    <content contentuid="ExtraBonusActionPointName" version="1">Extra: Bonus Action Point</content>
+    <content contentuid="ExtraBonusActionPointTooltip" version="1">Sets extra bonus action point for passive Extra: Bonus Action Point.</content>
+    <content contentuid="ExtraReactionActionPointName" version="1">Extra: Reaction Action Point</content>
+    <content contentuid="ExtraReactionActionPointTooltip" version="1">Sets extra reaction action point for passive Extra: Reaction Action Point.</content>
     <content contentuid="ReliableRollsAbilityName" version="1">Critical Success: Ability</content>
     <content contentuid="ReliableRollsSkillName" version="1">Critical Success: Skill</content>
     <content contentuid="ReliableRollsSavingThrowName" version="1">Critical Success: Saving Throw</content>

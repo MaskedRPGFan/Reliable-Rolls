@@ -18,11 +18,21 @@ local Passives = {
 	"PASSIVE_RELIABLE_ROLL_EXTRA_ATTACK",
 	"PASSIVE_RELIABLE_ROLL_EXTRA_SAVING_THROW",
 	"PASSIVE_RELIABLE_ROLL_EXTRA_SKILL",
-	"PASSIVE_RELIABLE_ROLL_EXTRA_ABILITY"
+	"PASSIVE_RELIABLE_ROLL_EXTRA_ABILITY",
+	"PASSIVE_RELIABLE_ROLL_EXTRA_SPELL_SAVE_DC",
+	"PASSIVE_RELIABLE_ROLL_EXTRA_ARMOR",
+	"PASSIVE_RELIABLE_ROLL_EXTRA_MOVEMENT",
+	"PASSIVE_RELIABLE_ROLL_EXTRA_ACTION_POINT",
+	"PASSIVE_RELIABLE_ROLL_EXTRA_BONUS_ACTION_POINT",
+	"PASSIVE_RELIABLE_ROLL_EXTRA_REACTION_ACTION_POINT"
 }
 
 Ext.RegisterNetListener("ExtraHitPointsPostMessage", function(_, payload)
 	SetPBoostsValuePropertyFlags("PASSIVE_RELIABLE_ROLL_EXTRA_HIT_POINTS", "BOOST_RELIABLE_ROLL_EXTRA_HIT_POINTS", "ExtraHitPoints", "IncreaseMaxHP", "")
+end)
+
+Ext.RegisterNetListener("ExtraArmorPostMessage", function(_, payload)
+	SetPBoostsValuePropertyFlags("PASSIVE_RELIABLE_ROLL_EXTRA_ARMOR", "BOOST_RELIABLE_ROLL_EXTRA_ARMOR", "ExtraArmor", "AC", "")
 end)
 
 Ext.RegisterNetListener("ExtraInitiativePostMessage", function(_, payload)
@@ -39,6 +49,26 @@ end)
 
 Ext.RegisterNetListener("ExtraAbilityPostMessage", function(_, payload)
 	SetPBoostsValuePropertyFlags("PASSIVE_RELIABLE_ROLL_EXTRA_ABILITY", "BOOST_RELIABLE_ROLL_EXTRA_ABILITY", "ExtraAbility", "RollBonus(RawAbility,", "")
+end)
+
+Ext.RegisterNetListener("ExtraSpellSaveDCPostMessage", function(_, payload)
+	SetPBoostsValuePropertyFlags("PASSIVE_RELIABLE_ROLL_EXTRA_SPELL_SAVE_DC", "BOOST_RELIABLE_ROLL_EXTRA_SPELL_SAVE_DC", "ExtraSpellSaveDC", "SpellSaveDC", "")
+end)
+
+Ext.RegisterNetListener("ExtraMovementPostMessage", function(_, payload)
+	SetPBoostsValuePropertyFlags("PASSIVE_RELIABLE_ROLL_EXTRA_MOVEMENT", "BOOST_RELIABLE_ROLL_EXTRA_MOVEMENT", "ExtraMovement", "ActionResource(Movement,%d,0)", "")
+end)
+
+Ext.RegisterNetListener("ExtraActionPointPostMessage", function(_, payload)
+	SetPBoostsValuePropertyFlags("PASSIVE_RELIABLE_ROLL_EXTRA_ACTION_POINT", "BOOST_RELIABLE_ROLL_EXTRA_ACTION_POINT", "ExtraActionPoint", "ActionResource(ActionPoint,%d,0)", "")
+end)
+
+Ext.RegisterNetListener("ExtraBonusActionPointPostMessage", function(_, payload)
+	SetPBoostsValuePropertyFlags("PASSIVE_RELIABLE_ROLL_EXTRA_BONUS_ACTION_POINT", "BOOST_RELIABLE_ROLL_EXTRA_BONUS_ACTION_POINT", "ExtraBonusActionPoint", "ActionResource(BonusActionPoint,%d,0)", "")
+end)
+
+Ext.RegisterNetListener("ExtraReactionActionPointPostMessage", function(_, payload)
+	SetPBoostsValuePropertyFlags("PASSIVE_RELIABLE_ROLL_EXTRA_REACTION_ACTION_POINT", "BOOST_RELIABLE_ROLL_EXTRA_REACTION_ACTION_POINT", "ExtraReactionActionPoint", "ActionResource(ReactionActionPoint,%d,0)", "")
 end)
 
 Ext.RegisterNetListener("ReliableRollsAbilityPostMessage", function(_, payload)
@@ -65,12 +95,16 @@ Ext.RegisterNetListener("ReliableRollsDamagePostMessage", function(_, payload)
 	SetPBoostPropertyFlags("PASSIVE_RELIABLE_ROLL_DAMAGE", "BOOST_RELIABLE_ROLL_DAMAGE", "ReliableRollsDamage")
 end)
 
+Ext.RegisterNetListener("ReliableRollsAttackInterruptPostMessage", function(_, payload)
+	SetPBInterruptValuePropertyFlags("PASSIVE_RELIABLE_ROLL_ATTACK_INTERRUPT", "BOOST_RELIABLE_ROLL_ATTACK_INTERRUPT", "Interrupt_ReliableRoll_Attack", "ReliableRollsAttackInterrupt", "SetRoll", "")
+end)
+
 Ext.RegisterNetListener("ExtraAttackPostMessage", function(_, payload)
 	SetPBoostsValuePropertyFlags("PASSIVE_RELIABLE_ROLL_EXTRA_ATTACK", "BOOST_RELIABLE_ROLL_EXTRA_ATTACK", "ExtraAttack", "RollBonus(Attack,", "")
 end)
 
 Ext.RegisterNetListener("ReliableRollsAttackRangePostMessage", function(_, payload)
-	SetPBoostValueRangePropertyFlags("PASSIVE_RELIABLE_ROLL_ATTACK_RANGE", "BOOST_RELIABLE_ROLL_ATTACK_RANGE", "ReliableRollsAttackRange", "Attack", "")
+	SetPBoostValueRangePropertyFlags("PASSIVE_RELIABLE_ROLL_ATTACK_RANGE", "BOOST_RELIABLE_ROLL_ATTACK_RANGE", "ReliableRollsAttackRange", "Attack", "IsValidAttack()")
 end)
 
 Ext.RegisterNetListener("CriticalStrikePostMessage", function(_, payload)

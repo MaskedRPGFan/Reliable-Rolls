@@ -7,149 +7,191 @@
                 <node id="IconUV">
                     <attribute id="MapKey" type="FixedString" value="CombatLogToggle"/>
                     <attribute id="U1" type="float" value="0.0"/>
-                    <attribute id="U2" type="float" value="0.2"/>
+                    <attribute id="U2" type="float" value="0.16666666666666666"/>
                     <attribute id="V1" type="float" value="0.0"/>
-                    <attribute id="V2" type="float" value="0.2"/>
+                    <attribute id="V2" type="float" value="0.16666666666666666"/>
                 </node>
                 <node id="IconUV">
                     <attribute id="MapKey" type="FixedString" value="NoCriticalFailureAttack"/>
-                    <attribute id="U1" type="float" value="0.2"/>
-                    <attribute id="U2" type="float" value="0.4"/>
+                    <attribute id="U1" type="float" value="0.16666666666666666"/>
+                    <attribute id="U2" type="float" value="0.3333333333333333"/>
                     <attribute id="V1" type="float" value="0.0"/>
-                    <attribute id="V2" type="float" value="0.2"/>
+                    <attribute id="V2" type="float" value="0.16666666666666666"/>
                 </node>
                 <node id="IconUV">
                     <attribute id="MapKey" type="FixedString" value="OverheadToggle"/>
-                    <attribute id="U1" type="float" value="0.4"/>
-                    <attribute id="U2" type="float" value="0.6000000000000001"/>
+                    <attribute id="U1" type="float" value="0.3333333333333333"/>
+                    <attribute id="U2" type="float" value="0.5"/>
                     <attribute id="V1" type="float" value="0.0"/>
-                    <attribute id="V2" type="float" value="0.2"/>
+                    <attribute id="V2" type="float" value="0.16666666666666666"/>
                 </node>
                 <node id="IconUV">
                     <attribute id="MapKey" type="FixedString" value="PortraitIndicatorToggle"/>
-                    <attribute id="U1" type="float" value="0.6000000000000001"/>
-                    <attribute id="U2" type="float" value="0.8"/>
+                    <attribute id="U1" type="float" value="0.5"/>
+                    <attribute id="U2" type="float" value="0.6666666666666666"/>
                     <attribute id="V1" type="float" value="0.0"/>
-                    <attribute id="V2" type="float" value="0.2"/>
+                    <attribute id="V2" type="float" value="0.16666666666666666"/>
                 </node>
                 <node id="IconUV">
                     <attribute id="MapKey" type="FixedString" value="ReliableRollsAbility"/>
-                    <attribute id="U1" type="float" value="0.8"/>
-                    <attribute id="U2" type="float" value="1.0"/>
+                    <attribute id="U1" type="float" value="0.6666666666666666"/>
+                    <attribute id="U2" type="float" value="0.8333333333333333"/>
                     <attribute id="V1" type="float" value="0.0"/>
-                    <attribute id="V2" type="float" value="0.2"/>
+                    <attribute id="V2" type="float" value="0.16666666666666666"/>
                 </node>
                 <node id="IconUV">
                     <attribute id="MapKey" type="FixedString" value="ReliableRollsAttack"/>
-                    <attribute id="U1" type="float" value="0.0"/>
-                    <attribute id="U2" type="float" value="0.2"/>
-                    <attribute id="V1" type="float" value="0.2"/>
-                    <attribute id="V2" type="float" value="0.4"/>
+                    <attribute id="U1" type="float" value="0.8333333333333333"/>
+                    <attribute id="U2" type="float" value="0.9999999999999999"/>
+                    <attribute id="V1" type="float" value="0.0"/>
+                    <attribute id="V2" type="float" value="0.16666666666666666"/>
                 </node>
                 <node id="IconUV">
                     <attribute id="MapKey" type="FixedString" value="ReliableRollsAttackInterrupt"/>
-                    <attribute id="U1" type="float" value="0.2"/>
-                    <attribute id="U2" type="float" value="0.4"/>
-                    <attribute id="V1" type="float" value="0.2"/>
-                    <attribute id="V2" type="float" value="0.4"/>
+                    <attribute id="U1" type="float" value="0.0"/>
+                    <attribute id="U2" type="float" value="0.16666666666666666"/>
+                    <attribute id="V1" type="float" value="0.16666666666666666"/>
+                    <attribute id="V2" type="float" value="0.3333333333333333"/>
                 </node>
                 <node id="IconUV">
                     <attribute id="MapKey" type="FixedString" value="ReliableRollsAttackRange"/>
-                    <attribute id="U1" type="float" value="0.4"/>
-                    <attribute id="U2" type="float" value="0.6000000000000001"/>
-                    <attribute id="V1" type="float" value="0.2"/>
-                    <attribute id="V2" type="float" value="0.4"/>
+                    <attribute id="U1" type="float" value="0.16666666666666666"/>
+                    <attribute id="U2" type="float" value="0.3333333333333333"/>
+                    <attribute id="V1" type="float" value="0.16666666666666666"/>
+                    <attribute id="V2" type="float" value="0.3333333333333333"/>
                 </node>
                 <node id="IconUV">
                     <attribute id="MapKey" type="FixedString" value="ReliableRollsCriticalStrike"/>
-                    <attribute id="U1" type="float" value="0.6000000000000001"/>
-                    <attribute id="U2" type="float" value="0.8"/>
-                    <attribute id="V1" type="float" value="0.2"/>
-                    <attribute id="V2" type="float" value="0.4"/>
+                    <attribute id="U1" type="float" value="0.3333333333333333"/>
+                    <attribute id="U2" type="float" value="0.5"/>
+                    <attribute id="V1" type="float" value="0.16666666666666666"/>
+                    <attribute id="V2" type="float" value="0.3333333333333333"/>
                 </node>
                 <node id="IconUV">
                     <attribute id="MapKey" type="FixedString" value="ReliableRollsDamage"/>
-                    <attribute id="U1" type="float" value="0.8"/>
-                    <attribute id="U2" type="float" value="1.0"/>
-                    <attribute id="V1" type="float" value="0.2"/>
-                    <attribute id="V2" type="float" value="0.4"/>
+                    <attribute id="U1" type="float" value="0.5"/>
+                    <attribute id="U2" type="float" value="0.6666666666666666"/>
+                    <attribute id="V1" type="float" value="0.16666666666666666"/>
+                    <attribute id="V2" type="float" value="0.3333333333333333"/>
                 </node>
                 <node id="IconUV">
                     <attribute id="MapKey" type="FixedString" value="ReliableRollsDamageRange"/>
-                    <attribute id="U1" type="float" value="0.0"/>
-                    <attribute id="U2" type="float" value="0.2"/>
-                    <attribute id="V1" type="float" value="0.4"/>
-                    <attribute id="V2" type="float" value="0.6000000000000001"/>
+                    <attribute id="U1" type="float" value="0.6666666666666666"/>
+                    <attribute id="U2" type="float" value="0.8333333333333333"/>
+                    <attribute id="V1" type="float" value="0.16666666666666666"/>
+                    <attribute id="V2" type="float" value="0.3333333333333333"/>
                 </node>
                 <node id="IconUV">
                     <attribute id="MapKey" type="FixedString" value="ReliableRollsExtraAbility"/>
-                    <attribute id="U1" type="float" value="0.2"/>
-                    <attribute id="U2" type="float" value="0.4"/>
-                    <attribute id="V1" type="float" value="0.4"/>
-                    <attribute id="V2" type="float" value="0.6000000000000001"/>
+                    <attribute id="U1" type="float" value="0.8333333333333333"/>
+                    <attribute id="U2" type="float" value="0.9999999999999999"/>
+                    <attribute id="V1" type="float" value="0.16666666666666666"/>
+                    <attribute id="V2" type="float" value="0.3333333333333333"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="ReliableRollsExtraActionPoint"/>
+                    <attribute id="U1" type="float" value="0.0"/>
+                    <attribute id="U2" type="float" value="0.16666666666666666"/>
+                    <attribute id="V1" type="float" value="0.3333333333333333"/>
+                    <attribute id="V2" type="float" value="0.5"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="ReliableRollsExtraArmor"/>
+                    <attribute id="U1" type="float" value="0.16666666666666666"/>
+                    <attribute id="U2" type="float" value="0.3333333333333333"/>
+                    <attribute id="V1" type="float" value="0.3333333333333333"/>
+                    <attribute id="V2" type="float" value="0.5"/>
                 </node>
                 <node id="IconUV">
                     <attribute id="MapKey" type="FixedString" value="ReliableRollsExtraAttack"/>
-                    <attribute id="U1" type="float" value="0.4"/>
-                    <attribute id="U2" type="float" value="0.6000000000000001"/>
-                    <attribute id="V1" type="float" value="0.4"/>
-                    <attribute id="V2" type="float" value="0.6000000000000001"/>
+                    <attribute id="U1" type="float" value="0.3333333333333333"/>
+                    <attribute id="U2" type="float" value="0.5"/>
+                    <attribute id="V1" type="float" value="0.3333333333333333"/>
+                    <attribute id="V2" type="float" value="0.5"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="ReliableRollsExtraBonusActionPoint"/>
+                    <attribute id="U1" type="float" value="0.5"/>
+                    <attribute id="U2" type="float" value="0.6666666666666666"/>
+                    <attribute id="V1" type="float" value="0.3333333333333333"/>
+                    <attribute id="V2" type="float" value="0.5"/>
                 </node>
                 <node id="IconUV">
                     <attribute id="MapKey" type="FixedString" value="ReliableRollsExtraDamage"/>
-                    <attribute id="U1" type="float" value="0.6000000000000001"/>
-                    <attribute id="U2" type="float" value="0.8"/>
-                    <attribute id="V1" type="float" value="0.4"/>
-                    <attribute id="V2" type="float" value="0.6000000000000001"/>
+                    <attribute id="U1" type="float" value="0.6666666666666666"/>
+                    <attribute id="U2" type="float" value="0.8333333333333333"/>
+                    <attribute id="V1" type="float" value="0.3333333333333333"/>
+                    <attribute id="V2" type="float" value="0.5"/>
                 </node>
                 <node id="IconUV">
                     <attribute id="MapKey" type="FixedString" value="ReliableRollsExtraHitPoints"/>
-                    <attribute id="U1" type="float" value="0.8"/>
-                    <attribute id="U2" type="float" value="1.0"/>
-                    <attribute id="V1" type="float" value="0.4"/>
-                    <attribute id="V2" type="float" value="0.6000000000000001"/>
+                    <attribute id="U1" type="float" value="0.8333333333333333"/>
+                    <attribute id="U2" type="float" value="0.9999999999999999"/>
+                    <attribute id="V1" type="float" value="0.3333333333333333"/>
+                    <attribute id="V2" type="float" value="0.5"/>
                 </node>
                 <node id="IconUV">
                     <attribute id="MapKey" type="FixedString" value="ReliableRollsExtraInitiative"/>
                     <attribute id="U1" type="float" value="0.0"/>
-                    <attribute id="U2" type="float" value="0.2"/>
-                    <attribute id="V1" type="float" value="0.6000000000000001"/>
-                    <attribute id="V2" type="float" value="0.8"/>
+                    <attribute id="U2" type="float" value="0.16666666666666666"/>
+                    <attribute id="V1" type="float" value="0.5"/>
+                    <attribute id="V2" type="float" value="0.6666666666666666"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="ReliableRollsExtraMovement"/>
+                    <attribute id="U1" type="float" value="0.16666666666666666"/>
+                    <attribute id="U2" type="float" value="0.3333333333333333"/>
+                    <attribute id="V1" type="float" value="0.5"/>
+                    <attribute id="V2" type="float" value="0.6666666666666666"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="ReliableRollsExtraReactionActionPoint"/>
+                    <attribute id="U1" type="float" value="0.3333333333333333"/>
+                    <attribute id="U2" type="float" value="0.5"/>
+                    <attribute id="V1" type="float" value="0.5"/>
+                    <attribute id="V2" type="float" value="0.6666666666666666"/>
                 </node>
                 <node id="IconUV">
                     <attribute id="MapKey" type="FixedString" value="ReliableRollsExtraSavingThrow"/>
-                    <attribute id="U1" type="float" value="0.2"/>
-                    <attribute id="U2" type="float" value="0.4"/>
-                    <attribute id="V1" type="float" value="0.6000000000000001"/>
-                    <attribute id="V2" type="float" value="0.8"/>
+                    <attribute id="U1" type="float" value="0.5"/>
+                    <attribute id="U2" type="float" value="0.6666666666666666"/>
+                    <attribute id="V1" type="float" value="0.5"/>
+                    <attribute id="V2" type="float" value="0.6666666666666666"/>
                 </node>
                 <node id="IconUV">
                     <attribute id="MapKey" type="FixedString" value="ReliableRollsExtraSkill"/>
-                    <attribute id="U1" type="float" value="0.4"/>
-                    <attribute id="U2" type="float" value="0.6000000000000001"/>
-                    <attribute id="V1" type="float" value="0.6000000000000001"/>
-                    <attribute id="V2" type="float" value="0.8"/>
+                    <attribute id="U1" type="float" value="0.6666666666666666"/>
+                    <attribute id="U2" type="float" value="0.8333333333333333"/>
+                    <attribute id="V1" type="float" value="0.5"/>
+                    <attribute id="V2" type="float" value="0.6666666666666666"/>
+                </node>
+                <node id="IconUV">
+                    <attribute id="MapKey" type="FixedString" value="ReliableRollsExtraSpellSaveDC"/>
+                    <attribute id="U1" type="float" value="0.8333333333333333"/>
+                    <attribute id="U2" type="float" value="0.9999999999999999"/>
+                    <attribute id="V1" type="float" value="0.5"/>
+                    <attribute id="V2" type="float" value="0.6666666666666666"/>
                 </node>
                 <node id="IconUV">
                     <attribute id="MapKey" type="FixedString" value="ReliableRollsIgnoreOA"/>
-                    <attribute id="U1" type="float" value="0.6000000000000001"/>
-                    <attribute id="U2" type="float" value="0.8"/>
-                    <attribute id="V1" type="float" value="0.6000000000000001"/>
-                    <attribute id="V2" type="float" value="0.8"/>
+                    <attribute id="U1" type="float" value="0.0"/>
+                    <attribute id="U2" type="float" value="0.16666666666666666"/>
+                    <attribute id="V1" type="float" value="0.6666666666666666"/>
+                    <attribute id="V2" type="float" value="0.8333333333333333"/>
                 </node>
                 <node id="IconUV">
                     <attribute id="MapKey" type="FixedString" value="ReliableRollsSavingThrow"/>
-                    <attribute id="U1" type="float" value="0.8"/>
-                    <attribute id="U2" type="float" value="1.0"/>
-                    <attribute id="V1" type="float" value="0.6000000000000001"/>
-                    <attribute id="V2" type="float" value="0.8"/>
+                    <attribute id="U1" type="float" value="0.16666666666666666"/>
+                    <attribute id="U2" type="float" value="0.3333333333333333"/>
+                    <attribute id="V1" type="float" value="0.6666666666666666"/>
+                    <attribute id="V2" type="float" value="0.8333333333333333"/>
                 </node>
                 <node id="IconUV">
                     <attribute id="MapKey" type="FixedString" value="ReliableRollsSkill"/>
-                    <attribute id="U1" type="float" value="0.0"/>
-                    <attribute id="U2" type="float" value="0.2"/>
-                    <attribute id="V1" type="float" value="0.8"/>
-                    <attribute id="V2" type="float" value="1.0"/>
+                    <attribute id="U1" type="float" value="0.3333333333333333"/>
+                    <attribute id="U2" type="float" value="0.5"/>
+                    <attribute id="V1" type="float" value="0.6666666666666666"/>
+                    <attribute id="V2" type="float" value="0.8333333333333333"/>
                 </node>
             </children>
         </node>
@@ -166,8 +208,8 @@
                     <attribute id="UUID" type="FixedString" value="0052b675-b9a4-44c7-a2ef-5ab661b52e53"/>
                 </node>
                 <node id="TextureAtlasTextureSize">
-                    <attribute id="Height" type="int32" value="320"/>
-                    <attribute id="Width" type="int32" value="320"/>
+                    <attribute id="Height" type="int32" value="384"/>
+                    <attribute id="Width" type="int32" value="384"/>
                 </node>
             </children>
         </node>
