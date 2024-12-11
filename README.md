@@ -103,7 +103,7 @@ Planned features:
 ## Requirements
 
 * ➡️ [Norbyte's Baldur's Gate 3 Script Extender](https://github.com/Norbyte/bg3se/releases), version: 20+.
-* ➡️ [Mod Configuration Menu (MCM)](https://www.nexusmods.com/baldursgate3/mods/9162), version: 1.18.0+.
+* ➡️ [Mod Configuration Menu (MCM)](https://www.nexusmods.com/baldursgate3/mods/9162), version: 1.17.1+.
 
 ## Installation
 
